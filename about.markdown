@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wanted-website
 title: About
 permalink: /about/
 ---
