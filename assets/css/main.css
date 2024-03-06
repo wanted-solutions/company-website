@@ -2848,6 +2848,10 @@ header .navbar-expand .navbar-brand img {
     height: 85%;
 }
 
+.hero-image-small {
+    display: none;
+}
+
 .hero-image-left {
     position: absolute;
     left: 10%;
@@ -4068,6 +4072,14 @@ footer .copyright a:not(.btn) {
         height: auto;
         bottom: 0;
         right: initial;
+    }
+
+    body .no-slider .hero-image-small {
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        opacity: .5 !important;
+        right: 5% !important;
     }
 
     body .full-slider .hero-image-left,
