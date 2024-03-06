@@ -4281,3 +4281,18 @@ footer .copyright a:not(.btn) {
 }
 
 /* #endregion All Media Queries */
+
+.hero-background {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-image: url("assets/website/hp-background-full.jpeg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
