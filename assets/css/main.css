@@ -218,8 +218,8 @@ h1,
     line-height: 1.2;
     font-family: var(--h1-font);
     color: var(--primary-color);
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
+    /*-ms-word-wrap: break-word;
+    word-wrap: break-word;*/
 }
 
 h1 em,
@@ -3963,6 +3963,10 @@ footer .copyright a:not(.btn) {
     body .slide-content .title,
     body h2.super {
         font-size: 3.5rem;
+    }
+
+    body .no-slider .inner .left {
+        width: 58% !important;
     }
 
     body .text-md-left h2.featured,
