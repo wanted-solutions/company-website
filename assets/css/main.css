@@ -3888,6 +3888,10 @@ footer .copyright a:not(.btn) {
         font-size: 4rem;
     }
 
+    body .hero-image {
+        right: 2.5% !important
+    }
+
     body h2 {
         font-size: 2.5rem;
     }
