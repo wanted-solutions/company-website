@@ -1,6 +1,6 @@
 ---
-layout: wanted-blog-articles
-title:  ""
+layout: wanted-blog-article
+title:  "Cloud migrations challenges"
 date:   2024-02-28 22:32:01 +0100
 categories: cloud migration challenges
 ---
