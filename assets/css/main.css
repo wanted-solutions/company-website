@@ -4331,3 +4331,7 @@ footer .copyright a:not(.btn) {
     background-position: 50% 0;
     background-size: cover;
 }
+
+a.gdpr-cookie-notice-nav-item:not(.btn) {
+    color: var(--secondary-p-color);
+}
