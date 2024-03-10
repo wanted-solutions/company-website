@@ -4334,4 +4334,7 @@ footer .copyright a:not(.btn) {
 
 body a.gdpr-cookie-notice-nav-item:not(.btn) {
     color: var(--secondary-p-color) !important;
+    .gdpr-cookie-notice-nav-item-btn {
+        color: var(--primary-p-color) !important;
+    }
 }
