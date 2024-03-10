@@ -587,11 +587,11 @@ section {
 }
 
 section.hero       { background-color: var(--hero-bg-color); }
-section.section-1  { background-color: var(--section-1-bg-color);  background-image: url(/assets/website/hp-background-002-full-0.35.png); }
+section.section-1  { background-color: var(--section-1-bg-color);  background-image: url(/assets/website/hp-background-002-full-0.35.png); background-size: cover; background-position: right bottom; }
 section.section-2  { background-color: var(--section-2-bg-color);  background-image: var(--section-2-bg-image); }
 section.section-3  { background-color: var(--section-3-bg-color);  background-image: var(--section-3-bg-image); }
-section.section-4  { background-color: var(--section-4-bg-color);  background-image: url(/assets/website/hp-background-002-full-0.35.png); }
-section.section-5  { background-color: var(--section-5-bg-color);  background-image: url(/assets/website/hp-background-003-full-0.35.png); }
+section.section-4  { background-color: var(--section-4-bg-color);  background-image: url(/assets/website/hp-background-002-full-0.35.png); background-size: cover; background-position: right bottom; }
+section.section-5  { background-color: var(--section-5-bg-color);  background-image: url(/assets/website/hp-background-003-full-0.35.png); background-size: cover; background-position: right bottom; }
 section.section-6  { background-color: var(--section-6-bg-color);  background-image: var(--section-6-bg-image); }
 section.section-7  { background-color: var(--section-7-bg-color);  background-image: var(--section-7-bg-image); }
 section.section-8  { background-color: var(--section-8-bg-color);  background-image: var(--section-8-bg-image); }
