@@ -11,12 +11,12 @@ layout: wanted-website
         <div class="swiper-wrapper">
             <div class="swiper-slide slide-center">
                 <img src="/assets/website/hp-ilustration.webp" class="hero-image" alt="Hero Image">
-                <div class="row">
+                <div class="slide-content row">
                     <div class="col-12 d-flex inner">
                         <div class="left align-self-center text-center text-md-left">
                             <h1 class="title effect-static-text">YOUR CHALLENGES<br/>OUR SOLUTIONS</h1>
                             <!-- <p data-aos="zoom-out-up" data-aos-delay="800" class="description">WANTED.<small>SOLUTIONS</small></p> -->
-                            <a href="#footer" class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn dark-button"><i class="icon-cup"></i>GET STARTED</a>
+                            <a href="#footer" data-aos="zoom-out-up" data-aos-delay="1200" class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn dark-button"><i class="icon-cup"></i>GET STARTED</a>
                         </div>
                     </div>
                 </div>
