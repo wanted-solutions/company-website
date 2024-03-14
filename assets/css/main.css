@@ -312,7 +312,18 @@ h3 {
     color: var(--white-color);
 }
 
-h4, h3.employee-name {
+h3.employee-name {
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    font-weight: var(--h2-weight);
+    line-height: 1.2;
+    font-family: var(--h2-font);
+    font-display: swap;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+h4 {
     margin: 1.5rem 0;
     font-size: 1.3rem;
     font-weight: var(--h2-weight);
