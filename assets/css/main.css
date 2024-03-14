@@ -60,7 +60,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 html {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     -webkit-overflow-scrolling: touch;
     -webkit-text-size-adjust: 100%;
 }
