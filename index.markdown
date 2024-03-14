@@ -138,7 +138,7 @@ layout: wanted-website
                                 <p>Software engineer</p>
                                 <ul class="navbar-nav social share-list ml-auto">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
+                                        <a href="https://github.com/online4Ucz" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="https://www.linkedin.com/in/marek-%C4%8Derjak-b3048b5/" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
@@ -155,10 +155,10 @@ layout: wanted-website
                                 <p>Software engineer</p>
                                 <ul class="navbar-nav social share-list ml-auto">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
+                                        <a href="https://github.com/mkanala" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
+                                        <a href="https://www.linkedin.com/in/martinkanala/" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -174,9 +174,6 @@ layout: wanted-website
                                     <li class="nav-item">
                                         <a href="https://github.com/naceradsky" target="_blank" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
                                     </li>
-                                    <!--<li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
-                                    </li>-->
                                 </ul>
                             </div>
                         </div>
@@ -188,12 +185,6 @@ layout: wanted-website
                                 <h3 class="employee-name">Radek Felkl</h3>
                                 <p>Software engineer</p>
                                 <ul class="navbar-nav social share-list ml-auto">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -205,12 +196,6 @@ layout: wanted-website
                                 <h3 class="employee-name">Ondřej Hošek</h3>
                                 <p>Software engineer</p>
                                 <ul class="navbar-nav social share-list ml-auto">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -222,12 +207,6 @@ layout: wanted-website
                                 <h3 class="employee-name">Jan Duda</h3>
                                 <p>Software engineer</p>
                                 <ul class="navbar-nav social share-list ml-auto">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -239,12 +218,6 @@ layout: wanted-website
                                 <h3 class="employee-name">Vlastimil Pevný</h3>
                                 <p>Software engineer</p>
                                 <ul class="navbar-nav social share-list ml-auto">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
