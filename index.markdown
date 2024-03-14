@@ -9,8 +9,6 @@ layout: wanted-website
 <section id="slider" class="hero p-0 odd featured all">
     <div class="swiper-container no-slider animation slider-h-100">
         <div class="swiper-wrapper">
-
-            <!-- Item 1 -->
             <div class="swiper-slide slide-center">
                 <img src="/assets/website/hp-ilustration.webp" class="hero-image" alt="Hero Image">
                 <div class="slide-content row">
@@ -24,7 +22,6 @@ layout: wanted-website
                 </div>
                 <div class="hero-background"></div>
             </div>
-
         </div>
         <div class="swiper-pagination"></div>
     </div>
@@ -86,8 +83,6 @@ layout: wanted-website
 <section id="get" class="section-3 hero odd p-0 featured all">
     <div class="swiper-container no-slider animation slider-h-75">
         <div class="swiper-wrapper">
-
-            <!-- Item 1 -->
             <div class="swiper-slide slide-center">
                 <video class="full-image" data-mask="80" playsinline autoplay muted loop>
                     <source src="/assets/videos/background-animation-001.mp4" type="video/mp4" />
