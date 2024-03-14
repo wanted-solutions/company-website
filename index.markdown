@@ -34,42 +34,42 @@ layout: wanted-website
             <div class="col-12 col-md-6 col-lg-4 item">
                 <div class="card no-hover">
                     <i class="icon icon-globe"></i>
-                    <h3 class="feature-name">IT 4 Enteprise</h4>
+                    <h3 class="feature-name">IT 4 Enteprise</h3>
                     <p>Are you stucked with your IT operations at scale? Here we are to help you with every aspect to achieve the state you have dreamed of.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 item">
                 <div class="card no-hover">
                     <i class="icon icon-basket"></i>
-                    <h3 class="feature-name">E-Commerce Solutions</h4>
+                    <h3 class="feature-name">E-Commerce Solutions</h3>
                     <p>Are you struggling with scaling your E-commerce operations channel? Do you need improove performance of your on-line store? We are ready to help.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 item">
                 <div class="card no-hover">
                     <i class="icon icon-screen-smartphone"></i>
-                    <h3 class="feature-name">Mobile Apps</h4>
+                    <h3 class="feature-name">Mobile Apps</h3>
                     <p>There is no complete product without mobile application aside. Improove your customer experience by custom tailored mobile application solution.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 item">
                 <div class="card no-hover">
                     <i class="icon icon-layers"></i>
-                    <h3 class="feature-name">IoT & AI Solutions</h4>
+                    <h3 class="feature-name">IoT & AI Solutions</h3>
                     <p>Discover the state of the art solutions powered by IoT and AI technologies, unlock another layer of potential to increase your productivity at scale.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 item">
                 <div class="card no-hover">
                     <i class="icon icon-chart"></i>
-                    <h3 class="feature-name">SEO and Digital Marketing</h4>
+                    <h3 class="feature-name">SEO and Digital Marketing</h3>
                     <p>Conversion rate is to low? Traffic is not brining expected numbers. Let our experts to help you with unlocking hidden potential of your on-line business.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 item">
                 <div class="card no-hover">
                     <i class="icon icon-bulb"></i>
-                    <h3 class="feature-name">Video and Live Streams</h4>
+                    <h3 class="feature-name">Video and Live Streams</h3>
                     <p>Do you need professional cinematography equipment for your project or help with professional grade live stream? We are able to cover your back.</p>
                 </div>
             </div>
