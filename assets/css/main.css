@@ -312,7 +312,7 @@ h3 {
     color: var(--white-color);
 }
 
-h3.employee-name, h3.feature-name {
+h3.employee-name, h3.feature-name, .card-body h3 {
     margin: 1.5rem 0;
     font-size: 1.3rem;
     font-weight: var(--h2-weight);

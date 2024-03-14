@@ -280,7 +280,7 @@ layout: wanted-website
                                 <div class="card-caption col-12 p-0">
                                     <div class="card-body">
                                         <a href="{{ post.url }}">
-                                            <h4 class="m-0">{{ post.title }}</h4>
+                                            <h3 class="m-0">{{ post.title }}</h3>
                                         </a>
                                     </div>
                                     <div class="card-footer d-lg-flex align-items-center justify-content-center">
