@@ -4,3 +4,301 @@
 
 layout: wanted-website
 ---
+
+<!-- Hero -->
+<section id="slider" class="hero p-0 odd featured all">
+    <div class="swiper-container no-slider animation slider-h-100">
+        <div class="swiper-wrapper">
+
+            <!-- Item 1 -->
+            <div class="swiper-slide slide-center">
+                <img src="/assets/website/hp-ilustration.webp" class="hero-image" alt="Hero Image">
+                <div class="slide-content row">
+                    <div class="col-12 d-flex inner">
+                        <div class="left align-self-center text-center text-md-left">
+                            <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">YOUR CHALLENGES<br/>OUR SOLUTIONS</h1>
+                            <!-- <p data-aos="zoom-out-up" data-aos-delay="800" class="description">WANTED.<small>SOLUTIONS</small></p> -->
+                            <a href="#footer" data-aos="zoom-out-up" data-aos-delay="1200" class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn dark-button"><i class="icon-cup"></i>GET STARTED</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-background"></div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="section-1 odd offers featured all">
+    <div class="container">
+        <div class="row justify-content-center text-center items">
+            <div class="col-12 col-md-6 col-lg-4 item">
+                <div class="card no-hover">
+                    <i class="icon icon-globe"></i>
+                    <h3 class="feature-name">IT 4 Enteprise</h4>
+                    <p>Are you stucked with your IT operations at scale? Here we are to help you with every aspect to achieve the state you have dreamed of.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 item">
+                <div class="card no-hover">
+                    <i class="icon icon-basket"></i>
+                    <h3 class="feature-name">E-Commerce Solutions</h4>
+                    <p>Are you struggling with scaling your E-commerce operations channel? Do you need improove performance of your on-line store? We are ready to help.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 item">
+                <div class="card no-hover">
+                    <i class="icon icon-screen-smartphone"></i>
+                    <h3 class="feature-name">Mobile Apps</h4>
+                    <p>There is no complete product without mobile application aside. Improove your customer experience by custom tailored mobile application solution.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 item">
+                <div class="card no-hover">
+                    <i class="icon icon-layers"></i>
+                    <h3 class="feature-name">IoT & AI Solutions</h4>
+                    <p>Discover the state of the art solutions powered by IoT and AI technologies, unlock another layer of potential to increase your productivity at scale.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 item">
+                <div class="card no-hover">
+                    <i class="icon icon-chart"></i>
+                    <h3 class="feature-name">SEO and Digital Marketing</h4>
+                    <p>Conversion rate is to low? Traffic is not brining expected numbers. Let our experts to help you with unlocking hidden potential of your on-line business.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 item">
+                <div class="card no-hover">
+                    <i class="icon icon-bulb"></i>
+                    <h3 class="feature-name">Video and Live Streams</h4>
+                    <p>Do you need professional cinematography equipment for your project or help with professional grade live stream? We are able to cover your back.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Get -->
+<section id="get" class="section-3 hero odd p-0 featured all">
+    <div class="swiper-container no-slider animation slider-h-75">
+        <div class="swiper-wrapper">
+
+            <!-- Item 1 -->
+            <div class="swiper-slide slide-center">
+                <video class="full-image" data-mask="80" playsinline autoplay muted loop>
+                    <source src="/assets/videos/background-animation-001.mp4" type="video/mp4" />
+                </video> 
+                <div class="slide-content row">
+                    <div class="col-12 d-flex inner">
+                        <div class="center align-self-center text-center">
+                            <h2 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">ARE YOU READY?</h2>
+                            <p data-aos="zoom-out-up" data-aos-delay="800" class="description ml-auto mr-auto">WANTED.solutions is creativity driven digital agency that offers innovative IT solutions and stunning cinematography for your business. Whether you need a website, an app, a video, or a graphic design, we have the skills and the vision to make it happen.</p>
+                            <a href="#contact" data-aos="zoom-out-up" data-aos-delay="1200" class="smooth-anchor ml-auto mr-auto mt-5 btn primary-button"><i class="icon-rocket"></i>CONTACT US</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<!-- Team -->
+<section id="testimonials" class="section-4 odd carousel featured all">
+    <div class="overflow-holder">
+        <div class="container">
+            <div class="row text-center intro">
+                <div class="col-12">
+                    <h2>Meet our team</h2>
+                    <p class="text-max-800">We are passionate about creating digital products that are user-friendly, engaging, and effective. We work with clients from various industries and sectors, delivering tailor-made solutions that meet their needs and goals. At WANTED.solutions, we don't just provide services, we create solutions for your challenges.</p>
+                </div>
+            </div>
+            <div class="swiper-container mid-slider items">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-center text-center item">
+                        <div class="row card">
+                            <div class="col-12">
+                                <img loading="lazy" src="/assets/team/martin-hrasek.webp" alt="Martin Hrášek" class="person">
+                                <h3 class="employee-name">Martin Hrášek</h3>
+                                <p><i>Solutions architect</i></p>
+                                <ul class="navbar-nav social share-list ml-auto">
+                                    <li class="nav-item">
+                                        <a href="https://github.com/marley-ma/" target="_blank" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://www.linkedin.com/in/marley-ma/" target="_blank" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-center text-center item">
+                        <div class="row card">
+                            <div class="col-12">
+                                <img loading="lazy" src="/assets/team/marek-cerjak.webp" alt="Marek Čerjak" class="person">
+                                <h3 class="employee-name">Marek Čerjak</h3>
+                                <p>Software engineer</p>
+                                <ul class="navbar-nav social share-list ml-auto">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://www.linkedin.com/in/marek-%C4%8Derjak-b3048b5/" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-center text-center item">
+                        <div class="row card">
+                            <div class="col-12">
+                                <img loading="lazy" src="/assets/team/martin-kanala.webp" alt="Martin Kanala" class="person">
+                                <h3 class="employee-name">Martin Kanala</h3>
+                                <p>Software engineer</p>
+                                <ul class="navbar-nav social share-list ml-auto">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-center text-center item">
+                        <div class="row card">
+                            <div class="col-12">
+                                <img loading="lazy" src="/assets/team/vojtech-naceradsky.webp" alt="Vojtěch Načeradský" class="person">
+                                <h3 class="employee-name">Vojtěch Načeradský</h3>
+                                <p>Project manager</p>
+                                <ul class="navbar-nav social share-list ml-auto">
+                                    <li class="nav-item">
+                                        <a href="https://github.com/naceradsky" target="_blank" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
+                                    </li>
+                                    <!--<li class="nav-item">
+                                        <a href="#" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
+                                    </li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-center text-center item">
+                        <div class="row card">
+                            <div class="col-12">
+                                <img loading="lazy" src="/assets/team/radek-felkl.webp" alt="Radek Felkl" class="person">
+                                <h3 class="employee-name">Radek Felkl</h3>
+                                <p>Software engineer</p>
+                                <ul class="navbar-nav social share-list ml-auto">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-center text-center item">
+                        <div class="row card">
+                            <div class="col-12">
+                                <img loading="lazy" src="/assets/team/ondrej-hosek.webp" alt="Ondřej Hošek" class="person">
+                                <h3 class="employee-name">Ondřej Hošek</h3>
+                                <p>Software engineer</p>
+                                <ul class="navbar-nav social share-list ml-auto">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-center text-center item">
+                        <div class="row card">
+                            <div class="col-12">
+                                <img loading="lazy" src="/assets/team/jan-duda.webp" alt="Jan Duda" class="person">
+                                <h3 class="employee-name">Jan Duda</h3>
+                                <p>Software engineer</p>
+                                <ul class="navbar-nav social share-list ml-auto">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-center text-center item">
+                        <div class="row card">
+                            <div class="col-12">
+                                <img loading="lazy" src="/assets/team/vlastimil-pevny.webp" alt="Vlastimil Pevný" class="person">
+                                <h3 class="employee-name">Vlastimil Pevný</h3>
+                                <p>Software engineer</p>
+                                <ul class="navbar-nav social share-list ml-auto">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link"><i class="icon-social-github ml-2 mr-2"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- News -->
+<section id="news" class="section-5 odd carousel showcase news featured all">
+    <div class="overflow-holder">
+        <div class="container">
+            <div class="row intro">
+                <div class="col-12 col-md-9 align-self-center text-center text-md-left">
+                    <h2 class="featured">Latest Articles</h2>
+                    <p>We publish exclusive content on our blog about various topics. From tutorials to company press releases, you can always find fresh content on our blog and social media.</p>
+                </div>
+                <div class="col-12 col-md-3 align-self-end">
+                    <a href="/blog/articles/" class="btn mx-auto mr-md-0 ml-md-auto primary-button"><i class="icon-grid"></i>BROWSE ALL</a>
+                </div>
+            </div>
+            <div class="swiper-container mid-slider items">
+                <div class="swiper-wrapper">
+                    {% for post in site.posts %}
+                        <div class="swiper-slide slide-center item">
+                            <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img loading="lazy" src="/assets/team/news-1-h.jpg" alt="Lorem ipsum">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <a href="{{ post.url }}">
+                                            <h4 class="m-0">{{ post.title }}</h4>
+                                        </a>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                        <a href="javascript:void(0)" class="d-lg-flex align-items-center"><i class="icon-user"></i>{{ post.author }}</a>
+                                        <a href="javascript:void(0)" class="d-lg-flex align-items-center"><i class="icon-clock"></i>{{ post.date | date_to_string: "ordinal" }}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
