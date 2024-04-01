@@ -18,150 +18,24 @@ permalink: /articles/
         <div class="row content blog-grid masonry">
             <main class="col-12 p-0">
                 <div class="bricklayer items columns-3">
-                    <div class="card p-0 text-center item">
-                        <div class="image-over">
-                            <img src="assets/images/news-7-h.jpg" alt="Lorem ipsum">
-                        </div>
-                        <div class="card-caption col-12 p-0">
-                            <div class="card-body">
-                                <a href="page-single-post-3.html">
-                                    <h4>Tips for having a good relationship at work.</h4>
-                                </a>
+                    {% for post in site.posts %}
+                        <div class="card p-0 text-center item">
+                            <div class="image-over">
+                                <img src="assets/images/news-7-h.jpg" alt="Lorem ipsum">
                             </div>
-                            <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card p-0 text-center item">
-                        <div class="image-over">
-                            <img src="assets/images/news-8-h.jpg" alt="Lorem ipsum">
-                        </div>
-                        <div class="card-caption col-12 p-0">
-                            <div class="card-body">
-                                <a href="page-single-post-3.html">
-                                    <h4>Data scientists are a booming profession.</h4>
-                                </a>
-                            </div>
-                            <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
+                            <div class="card-caption col-12 p-0">
+                                <div class="card-body">
+                                    <a href="{{ post.url }}">
+                                        <h4>{{ post.title }}</h4>
+                                    </a>
+                                </div>
+                                <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                    <span class="d-lg-flex align-items-center"><i class="icon-user"></i>{{ post.author }}</span>
+                                    <span class="d-lg-flex align-items-center"><i class="icon-clock"></i>{{ post.date | date_to_string: "ordinal" }}</span>
+                                </div>
                             </div>
                         </div>
-                    </div> 
-                    <div class="card p-0 text-center item">
-                        <div class="image-over">
-                            <img src="assets/images/news-9-h.jpg" alt="Lorem ipsum">
-                        </div>
-                        <div class="card-caption col-12 p-0">
-                            <div class="card-body">
-                                <a href="page-single-post-3.html">
-                                    <h4>Successful creations using virtual reality.</h4>
-                                </a>
-                            </div>
-                            <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="card p-0 text-center item">
-                        <div class="image-over">
-                            <img src="assets/images/news-10-h.jpg" alt="Lorem ipsum">
-                        </div>
-                        <div class="card-caption col-12 p-0">
-                            <div class="card-body">
-                                <a href="page-single-post-3.html">
-                                    <h4>Is the trend these days working from home?</h4>
-                                </a>
-                            </div>
-                            <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="card p-0 text-center item">
-                        <div class="image-over">
-                            <img src="assets/images/news-11-h.jpg" alt="Lorem ipsum">
-                        </div>
-                        <div class="card-caption col-12 p-0">
-                            <div class="card-body">
-                                <a href="page-single-post-3.html">
-                                    <h4>How digital transformation has changed the world.</h4>
-                                </a>
-                            </div>
-                            <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="card p-0 text-center item">
-                        <div class="image-over">
-                            <img src="assets/images/news-12-h.jpg" alt="Lorem ipsum">
-                        </div>
-                        <div class="card-caption col-12 p-0">
-                            <div class="card-body">
-                                <a href="page-single-post-3.html">
-                                    <h4>Why project management increases performance.</h4>
-                                </a>
-                            </div>
-                            <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card p-0 text-center item">
-                        <div class="image-over">
-                            <img src="assets/images/news-7-h.jpg" alt="Lorem ipsum">
-                        </div>
-                        <div class="card-caption col-12 p-0">
-                            <div class="card-body">
-                                <a href="page-single-post-3.html">
-                                    <h4>Tips for having a good relationship at work.</h4>
-                                </a>
-                            </div>
-                            <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card p-0 text-center item">
-                        <div class="image-over">
-                            <img src="assets/images/news-8-h.jpg" alt="Lorem ipsum">
-                        </div>
-                        <div class="card-caption col-12 p-0">
-                            <div class="card-body">
-                                <a href="page-single-post-3.html">
-                                    <h4>Data scientists are a booming profession.</h4>
-                                </a>
-                            </div>
-                            <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="card p-0 text-center item">
-                        <div class="image-over">
-                            <img src="assets/images/news-9-h.jpg" alt="Lorem ipsum">
-                        </div>
-                        <div class="card-caption col-12 p-0">
-                            <div class="card-body">
-                                <a href="page-single-post-3.html">
-                                    <h4>Tips for having a good relationship at work.</h4>
-                                </a>
-                            </div>
-                            <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Doe</a>
-                                <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>3 Days Ago</a>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </main>
         </div>
