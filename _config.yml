@@ -30,14 +30,19 @@ url: "https://wanted.solutions" # the base hostname & protocol for your site, e.
 #twitter_username: jekyllrb
 github_username:  wanted-solutions
 http_csp: "default-src 'self'; font-src 'self' data: fonts.gstatic.com; script-src 'self' 'unsafe-inline' www.googletagmanager.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src https://*; connect-src 'self' *.google-analytics.com; child-src 'none';"
+
 sass:
     sass_dir: _sass
     style: compressed
 
+
+paginate: 12
+paginate_path: "/articles/page-:num/"
 # Build settings
 #theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
