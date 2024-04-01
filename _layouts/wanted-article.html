@@ -144,16 +144,15 @@
                                 {% else %}
                                     <h1 class="featured mt-0 ml-0">{{ page.title }}</h1>
                                 {% endif %}
-                                {{ content }}
-
+                                <article>
+                                    {{ content }}
+                                </article>
                                 <!-- Post Holder -->
                                 <ul class="mb-5 post-holder">
                                     <li class="post-meta-item">
                                         <time class="date"><span class="posted-on">Posted on <span href="#" rel="bookmark"><time class="entry-date published updated" datetime="{{ page.date }}">{{ page.date | date_to_string: "ordinal" }}</time></span></span></time> by <span class="author vcard"><span class="url fn n" href="#">{{ page.author }}</span></span>
                                     </li>
                                 </ul>
-
-                                
                             </div>
                         </div>        
                     </main>
