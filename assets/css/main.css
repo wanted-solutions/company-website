@@ -4353,3 +4353,7 @@ body a.gdpr-cookie-notice-nav-item:not(.btn) {
 body .card-footer span {
     font-size: 0.8rem !important;
 }
+
+body .items .item .icon-margin {
+    margin: 1.5rem 0 !important;
+}
