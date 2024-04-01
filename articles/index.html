@@ -42,6 +42,7 @@ lang: en
             </main>
         </div>
 
+        {% if paginator.total_pages > 1 %}
         <!-- Pagination -->
         <div class="row">
             <div class="col-12">
@@ -69,5 +70,7 @@ lang: en
                 </nav>
             </div>
         </div>
+        {% endif %}
+
     </div>
 </section>
