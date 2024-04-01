@@ -188,6 +188,7 @@ layout: wanted-website
                                 <h3 class="employee-name">Radek Felkl</h3>
                                 <p>Software engineer</p>
                                 <ul class="navbar-nav social share-list ml-auto">
+                                    <li class="nav-item">&nbsp;</li>
                                 </ul>
                             </div>
                         </div>
@@ -236,7 +237,7 @@ layout: wanted-website
             </div>
             <div class="swiper-container mid-slider items">
                 <div class="swiper-wrapper">
-                    {% for post in site.posts %}
+                    {% for post in site.posts limit:9 %}
                         <div class="swiper-slide slide-center item">
                             <div class="row card p-0 text-center">
                                 <div class="image-over">
