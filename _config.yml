@@ -31,6 +31,8 @@ url: "https://wanted.solutions" # the base hostname & protocol for your site, e.
 github_username:  wanted-solutions
 http_csp: "default-src 'self'; font-src 'self' data: fonts.gstatic.com; script-src 'self' 'unsafe-inline' www.googletagmanager.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src https://*; connect-src 'self' *.google-analytics.com; child-src 'none';"
 
+permalink: /:categories/:title/
+
 sass:
     sass_dir: _sass
     style: compressed
