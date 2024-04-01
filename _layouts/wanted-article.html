@@ -97,6 +97,8 @@
         </script>
 
         {% include wanted-website/header-partial.html %}
+        
+        {% if page.hero %}
         <!-- Hero -->
         <section id="slider" class="hero p-0 odd featured">
             <div class="swiper-container no-slider slider-h-100">
@@ -123,6 +125,7 @@
                 </div>
             </div>
         </section>
+        {% endif %}
 
         <!-- Content -->
         <section id="content" class="section-1 body-mode-dark single featured">
