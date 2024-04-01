@@ -4349,3 +4349,7 @@ body a.gdpr-cookie-notice-nav-item:not(.btn) {
         color: var(--primary-p-color) !important;
     }
 }
+
+body .card-footer span {
+    font-size: 0.8rem !important;
+}
