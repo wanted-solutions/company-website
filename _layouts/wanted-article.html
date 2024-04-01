@@ -22,6 +22,11 @@
         <meta name="subject" content="{{ page.subject | default: site.subject }}">
         <meta name="author" content="Martin Hrášek @ WANTED.soutions">
 
+        <meta property="og:title" content="{{ page.title }}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="{{ page.url }}" />
+        <meta property="og:image" content="{{ site.url }}/{{ page.image }}" />
+
         <!-- ==============================================
         Favicons
         =============================================== -->
