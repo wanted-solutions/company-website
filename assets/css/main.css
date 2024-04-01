@@ -4346,6 +4346,6 @@ footer .copyright a:not(.btn) {
 body a.gdpr-cookie-notice-nav-item:not(.btn) {
     color: var(--secondary-t-color) !important;
     .gdpr-cookie-notice-nav-item-btn {
-        color: var(--primary-t-color) !important;
+        color: var(--primary-p-color) !important;
     }
 }
