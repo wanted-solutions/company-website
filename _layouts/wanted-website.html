@@ -9,16 +9,16 @@
         =============================================== -->
         <meta charset="utf-8">
         <meta name="robots" content="noindex, nofollow">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' data: fonts.gstatic.com; script-src 'self' 'unsafe-inline' www.googletagmanager.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src https://*; connect-src 'self' *.google-analytics.com; child-src 'none';">
+        <meta http-equiv="Content-Security-Policy" content="{{ site.http_csp }}">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
 
-        <title>{{ page.title  | default: "Your challenges, our solutions | WANTED.solutions" }}</title>
+        <title>{{ page.title  | default: site.title }}</title>
 
-        <meta name="description" content="WANTED.solutions is creativity driven digital agency that offers innovative IT solutions and stunning cinematography for your business. Whether you need a website, an app, a video, or a graphic design, we have the skills and the vision to make it happen. We are passionate about creating digital products that are user-friendly, engaging, and effective. We work with clients from various industries and sectors, delivering tailor-made solutions that meet their needs and goals. At WANTED.solutions, we don't just provide services, we create solutions for your challenges.">
-        <meta name="subject" content="Creative Agency, Portfolio, Corporate, Startup & Technology">
+        <meta name="description" content="{{ page.description | default: site.description }}">
+        <meta name="subject" content="{{ page.subject | default: site.subject }}">
         <meta name="author" content="Martin Hrášek @ WANTED.soutions">
 
         <!-- ==============================================
@@ -87,12 +87,12 @@
     </head>
 
     <body class="theme-mode-dark body-mode-dark">
-        <script defer src="https://www.googletagmanager.com/gtag/js?id=G-HT4PQ5J6CC"></script>
+        <script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-HT4PQ5J6CC');
+            gtag('config', '{{ site.google_analytics }}');
         </script>
 
         {% include wanted-website/header-partial.html %}
