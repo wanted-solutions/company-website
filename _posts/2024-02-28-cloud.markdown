@@ -1,5 +1,5 @@
 ---
-layout: wanted-blog-article
+layout: wanted-website
 title:  "Cloud migrations challenges"
 date:   2024-02-28 22:32:01 +0100
 author: Martin Hrášek
