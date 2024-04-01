@@ -15,7 +15,7 @@ layout: wanted-website
               
               <div class="slide-content row text-center">
                   <div class="col-12 mx-auto inner">
-                      <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">ERROR 404 - NOT FOUND!</h1>
+                      <h1 data-aos="zoom-out-up" data-aos-delay="400" class="title effect-static-text">NOT FOUND!</h1>
                       <nav data-aos="zoom-out-up" data-aos-delay="800" aria-label="breadcrumb">
                           <ol class="breadcrumb">
                               <li class="breadcrumb-item"><a href="/#demos">Home</a></li>
@@ -25,6 +25,48 @@ layout: wanted-website
                       </nav>
                   </div>
               </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- News -->
+<section id="news" class="section-5 odd carousel showcase news featured all">
+  <div class="overflow-holder">
+      <div class="container">
+          <div class="row intro">
+              <div class="col-12 col-md-9 align-self-center text-center text-md-left">
+                  <h2 class="featured">Latest Articles</h2>
+                  <p>We publish exclusive content on our blog about various topics. From tutorials to company press releases, you can always find fresh content on our blog and social media.</p>
+              </div>
+              <div class="col-12 col-md-3 align-self-end">
+                  <a href="/blog/articles/" class="btn mx-auto mr-md-0 ml-md-auto primary-button"><i class="icon-grid"></i>BROWSE ALL</a>
+              </div>
+          </div>
+          <div class="swiper-container mid-slider items">
+              <div class="swiper-wrapper">
+                  {% for post in site.posts %}
+                      <div class="swiper-slide slide-center item">
+                          <div class="row card p-0 text-center">
+                              <div class="image-over">
+                                  <img loading="lazy" src="/assets/team/news-1-h.jpg" alt="Lorem ipsum">
+                              </div>
+                              <div class="card-caption col-12 p-0">
+                                  <div class="card-body">
+                                      <a href="{{ post.url }}">
+                                          <h3 class="m-0">{{ post.title }}</h3>
+                                      </a>
+                                  </div>
+                                  <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                      <a href="javascript:void(0)" class="d-lg-flex align-items-center"><i class="icon-user"></i>{{ post.author }}</a>
+                                      <a href="javascript:void(0)" class="d-lg-flex align-items-center"><i class="icon-clock"></i>{{ post.date | date_to_string: "ordinal" }}</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  {% endfor %}
+              </div>
+              <div class="swiper-pagination"></div>
           </div>
       </div>
   </div>
