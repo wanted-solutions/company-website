@@ -37,10 +37,16 @@ sass:
 
 paginate: 12
 paginate_path: "/articles/page:num/"
+
+languages: ["en", "cz"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "public", "assets"]
+parallel_localization: true
 # Build settings
 #theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-polyglot
   - jekyll-paginate
 
 # Exclude from processing.
