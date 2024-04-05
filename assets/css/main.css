@@ -4361,3 +4361,7 @@ body .items .item .icon-margin {
 body code.inline {
     display: inline;
 }
+
+body code.hljs {
+    background: transparent !important;
+}
