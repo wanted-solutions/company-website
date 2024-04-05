@@ -1,0 +1,69 @@
+---
+layout: wanted-article
+title: HTMX: The Declarative Way of Building Web Applications
+date:   2024-04-04 23:59:31 +0100
+author: Martin Hrášek
+categories: software-development
+image: /assets/posts/htmx-introduction.jpg
+---   
+<p>In the world of web development, frontend frameworks like React, Angular, and Vue.js have gained immense popularity for building dynamic and interactive user interfaces. However, there's a lightweight alternative that's making waves in the developer community: HTMX.</p>
+
+<h2>What is HTMX?</h2>
+<p>HTMX is a library that allows you to build dynamic web applications using standard HTML attributes. It leverages the power of HTML and enhances it with additional attributes that enable you to make HTTP requests, update parts of the DOM, and handle user interactions without the need for complex JavaScript frameworks.</p>
+
+<h2>The Idea Behind HTMX</h2>
+<p>The core idea behind HTMX is to bring the simplicity and declarative nature of HTML to web application development. Instead of relying heavily on JavaScript to manipulate the DOM and handle user interactions, HTMX allows you to define these behaviors directly in your HTML markup using special attributes.</p>
+
+<h2>Pros of HTMX</h2>
+<ul>
+    <li>Simplicity: HTMX has a shallow learning curve, making it easy for developers to get started and understand the concepts quickly.</li>
+    <li>Declarative Approach: With HTMX, you can define behaviors and interactions declaratively in your HTML, making your code more readable and maintainable.</li>
+    <li>Lightweight: HTMX is a lightweight library, which means it has a minimal impact on your application's performance and load times.</li>
+    <li>Progressive Enhancement: HTMX follows the principles of progressive enhancement, allowing your application to work even when JavaScript is disabled.</li>
+</ul>
+
+<h2>Cons of HTMX</h2>
+<ul>
+    <li>Limited Ecosystem: Compared to popular frontend frameworks, HTMX has a smaller ecosystem and community, which means fewer third-party libraries and resources.</li>
+    <li>Lack of Tooling: HTMX doesn't have extensive tooling support like some frontend frameworks, which may limit advanced development workflows.</li>
+</ul>
+
+<h2>Comparing HTMX with Frontend Frameworks</h2>
+<p>When comparing HTMX with frontend frameworks like React, Angular, and Vue.js, it's important to consider the following aspects:</p>
+<ul>
+    <li>Complexity: Frontend frameworks often have a steeper learning curve and require more setup and configuration compared to HTMX.</li>
+    <li>Performance: While frontend frameworks provide powerful abstractions and optimizations, HTMX's lightweight nature can lead to better performance in certain scenarios.</li>
+    <li>Flexibility: Frontend frameworks offer more flexibility and extensibility, allowing you to build complex and highly interactive applications. HTMX, on the other hand, is more suitable for simpler use cases.</li>
+</ul>
+
+<h2>Simple Use Case with GoLang Backend</h2>
+<p>To demonstrate the simplicity of HTMX, let's consider a simple use case where we have a GoLang backend serving a web page with a button. When the button is clicked, we want to make an HTTP request to the backend and update a specific part of the page with the response.</p>
+
+<pre><code class="language-html">
+&lt;!-- HTML --&gt;
+&lt;button hx-post="/increment" hx-target="#result"&gt;Increment&lt;/button&gt;
+&lt;div id="result"&gt;0&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-go">
+// GoLang Backend
+func incrementHandler(w http.ResponseWriter, r *http.Request) {
+count, _ := strconv.Atoi(r.FormValue("count"))
+count++
+fmt.Fprintf(w, "%d", count)
+}
+</code></pre>
+
+<p>In this example, the button has the <code>hx-post</code> attribute, which specifies the URL to make an HTTP POST request to when clicked. The <code>hx-target</code> attribute indicates the element where the response should be inserted.</p>
+
+<p>On the backend, the <code>incrementHandler</code> function retrieves the current count from the request, increments it, and sends the updated count back as the response. HTMX automatically updates the <code>#result</code> element with the new count.</p>
+
+<h2>The Advantage of Declarative Approach</h2>
+<p>One of the key advantages of using HTMX is its declarative approach to web development. By defining behaviors and interactions directly in the HTML markup, you can make your code more readable, maintainable, and easier to reason about.</p>
+
+<p>With HTMX, you don't need to write complex JavaScript code to handle DOM manipulation and user interactions. Instead, you can leverage the power of HTML attributes to declaratively specify how your application should behave. This declarative approach reduces the cognitive load on developers and allows them to focus on the core functionality of their application.</p>
+
+<h2>Conclusion</h2>
+<p>HTMX offers a refreshing approach to building web applications by bringing the simplicity and declarative nature of HTML to the forefront. While it may not have the extensive ecosystem and tooling support of popular frontend frameworks, HTMX excels in its simplicity, lightweight nature, and adherence to progressive enhancement principles.</p>
+
+<p>If you're looking for a straightforward way to build dynamic web applications without the complexity of full-fledged frontend frameworks, HTMX is definitely worth exploring. Its declarative approach and ease of use make it an attractive option for developers who value simplicity and efficiency.</p>
