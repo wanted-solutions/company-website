@@ -54,9 +54,9 @@ func incrementHandler(w http.ResponseWriter, r *http.Request) {
 }
 </code></pre>
 
-<p>In this example, the button has the <code>hx-post</code> attribute, which specifies the URL to make an HTTP POST request to when clicked. The <code>hx-target</code> attribute indicates the element where the response should be inserted.</p>
+<p>In this example, the button has the <code class="inline">hx-post</code> attribute, which specifies the URL to make an HTTP POST request to when clicked. The <code class="inline">hx-target</code> attribute indicates the element where the response should be inserted.</p>
 
-<p>On the backend, the <code>incrementHandler</code> function retrieves the current count from the request, increments it, and sends the updated count back as the response. HTMX automatically updates the <code>#result</code> element with the new count.</p>
+<p>On the backend, the <code class="inline">incrementHandler</code> function retrieves the current count from the request, increments it, and sends the updated count back as the response. HTMX automatically updates the <code class="inline">#result</code> element with the new count.</p>
 
 <h2>The Advantage of Declarative Approach</h2>
 <p>One of the key advantages of using HTMX is its declarative approach to web development. By defining behaviors and interactions directly in the HTML markup, you can make your code more readable, maintainable, and easier to reason about.</p>

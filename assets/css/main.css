@@ -4357,3 +4357,7 @@ body .card-footer span {
 body .items .item .icon-margin {
     margin: 1.5rem 0 !important;
 }
+
+body code.inline {
+    display: inline;
+}
