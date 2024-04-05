@@ -100,6 +100,7 @@ jQuery(function ($) {
     })
 })
 
+
 /*----------------------------------------------
 3. Navigation
 ----------------------------------------------*/
@@ -226,6 +227,8 @@ jQuery(function ($) {
         $('.navbar').addClass('navbar-sticky');
         $('.navbar-holder').css('min-height',$('.navbar-expand').outerHeight());
     }
+
+    
 })
 
 /*----------------------------------------------

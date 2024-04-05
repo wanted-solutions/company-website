@@ -1483,6 +1483,10 @@ header .navbar-expand .navbar-nav.toggle {
 header .navbar-expand .navbar-nav.toggle i {
     font-size: 20px;
 }
+.navbar-nav.toggle {
+    margin: 0;
+}
+
 
 header .navbar-expand .navbar-brand {
     padding: 0;
@@ -3778,15 +3782,16 @@ footer .copyright a:not(.btn) {
 @media(max-width: 1199px) {
 
     /* #region Header */
-
+    
+    body header .navbar-expand .navbar-nav
+        {
+            display: none;
+        }
     body header .navbar-expand .navbar-nav.toggle {
         display: flex;
     }
-
-    body header .navbar-expand .navbar-nav.contacts,
-    body header .navbar-expand .navbar-nav.items ,
-    body header .navbar-expand .navbar-nav.icons .social {
-        display: none;
+    .navbar-expand .navbar-nav .nav-link:not(.btn){
+        padding-right: 0;
     }
 
     /* #endregion Header */
@@ -3917,6 +3922,9 @@ footer .copyright a:not(.btn) {
     body h2.super {
         font-size: 4rem;
     }
+    footer.odd .nav-item .nav-link {
+        margin-left: 20px;
+    }
 
     body .hero-image {
         right: 0 !important
@@ -3953,6 +3961,9 @@ footer .copyright a:not(.btn) {
     body footer .title {
         margin-top: 2rem;
     }
+    footer.odd .nav-item .nav-link {
+        margin: 0px -9px 0px 10px;
+    }
 
     /* #endregion Section */
 
@@ -3985,7 +3996,7 @@ footer .copyright a:not(.btn) {
     body .modal-body {
         align-items: start;
     }
-    
+
     /* #endregion Modal */
 }
 
@@ -3997,6 +4008,12 @@ footer .copyright a:not(.btn) {
     body .slide-content .title,
     body h2.super {
         font-size: 3.5rem;
+    }
+
+    body p,
+    body h3,
+    body h4 {
+        text-align: center;
     }
 
     body .no-slider .inner .left {
@@ -4287,6 +4304,16 @@ footer .copyright a:not(.btn) {
 
 @media (max-width: 576px) {
 
+    /* #region General */
+
+    body h1,
+    body .slide-content .title,
+    body h2.super {
+        font-size: 2.3rem;
+    }
+    
+    /* #endregion General */
+    
     /* #region Header */
 
     header .navbar-expand .navbar-brand img {
@@ -4317,6 +4344,7 @@ footer .copyright a:not(.btn) {
     
     /* #endregion Feature */
 }
+}
 
 @media(max-width: 374px) {
 
@@ -4325,7 +4353,7 @@ footer .copyright a:not(.btn) {
     body h1,
     body .slide-content .title,
     body h2.super {
-        font-size: 3rem;
+        font-size: 1.9rem;
     }
     
     /* #endregion General */
