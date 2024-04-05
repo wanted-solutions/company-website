@@ -4363,5 +4363,5 @@ body code.inline {
 }
 
 body code.hljs {
-    background: transparent !important;
+    background: rgba(40, 42, 54, 35%) !important;
 }
