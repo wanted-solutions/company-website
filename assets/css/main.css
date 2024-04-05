@@ -4364,4 +4364,5 @@ body code.inline {
 
 body code.hljs {
     background: rgba(40, 42, 54, 35%) !important;
+    padding: 0.5em 1em !important;
 }
