@@ -113,6 +113,7 @@ jQuery(function ($) {
     var toTop    = $('#scroll-to-top');
 
     $(document).ready(function() {
+        hljs.highlightAll();
         if (position > 0) {
             navbar.addClass('navbar-sticky');
         }
