@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "webpack": "^5.90.3"
+  },
+  "dependencies": {
+    "highlight.js": "^11.9.0"
   }
 }
