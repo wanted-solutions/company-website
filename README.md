@@ -24,7 +24,9 @@ To get the site running locally:
 
 Visit `http://localhost:4000` to view the site.
 
-If you encounter issues related to Content Security Policy, especially concerning loading images or executing scripts, you can temporarily disable the policy for local testing. To do this, comment out the Content Security Policy meta tag in the layouts/wanted-article.html and layouts/wanted-website.html files by adding a comment symbol (<!-- -->) around the line: <!-- <meta http-equiv="Content-Security-Policy" content="{{ site.http_csp }}"> -->
+If you encounter issues related to Content Security Policy, especially concerning loading images or executing scripts, you can temporarily disable the policy for local testing. To do this, comment out the Content Security Policy meta tag in the layouts/wanted-article.html and layouts/wanted-website.html files by adding a comment symbol (<!-- -->) around the line:
+<meta http-equiv="Content-Security-Policy" content="{{ site.http_csp }}">
+
 
 
 ## Contributing
