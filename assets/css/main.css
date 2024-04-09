@@ -4390,3 +4390,16 @@ body .card-footer span {
 body .items .item .icon-margin {
     margin: 1.5rem 0 !important;
 }
+
+body code.inline {
+    display: inline;
+}
+
+body code.hljs {
+    background: rgba(40, 42, 54, 35%) !important;
+    padding: 0.5em 1em 2em 1em !important;
+}
+
+body time.published, body span.author span {
+    color: var(--primary-color) !important;
+}
