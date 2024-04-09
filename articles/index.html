@@ -21,10 +21,10 @@ lang: en
             <main class="col-12 p-0">
                 <div class="bricklayer items columns-3">
                     {% for post in paginator.posts %}
-                        <div class="card p-0 text-center item">
-                            <a href="{{ post.url }}" title="{{ post.title }}" class="image-over">
+                        <a href="{{ post.url }}" title="{{ post.title }}" class="card p-0 text-center item">
+                            <div class="image-over">
                                 <img loading="lazy" src="{{ post.image }}" alt="{{ post.title }} ilustration image">
-                            </a>
+                            </div>
                             <div class="card-caption col-12 p-0">
                                 <div class="card-body">
                                     <h4>{{ post.title }}</h4>
@@ -34,7 +34,7 @@ lang: en
                                     <span class="d-lg-flex align-items-center"><i class="icon-clock"></i>{{ post.date | date_to_string: "ordinal" }}</span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     {% endfor %}
                 </div>
             </main>
