@@ -22,14 +22,12 @@ lang: en
                 <div class="bricklayer items columns-3">
                     {% for post in paginator.posts %}
                         <div class="card p-0 text-center item">
-                            <div class="image-over">
+                            <a href="{{ post.url }}" title="{{ post.title }}" class="image-over">
                                 <img loading="lazy" src="{{ post.image }}" alt="{{ post.title }} ilustration image">
-                            </div>
+                            </a>
                             <div class="card-caption col-12 p-0">
                                 <div class="card-body">
-                                    <a href="{{ post.url }}">
-                                        <h4>{{ post.title }}</h4>
-                                    </a>
+                                    <h4>{{ post.title }}</h4>
                                 </div>
                                 <div class="card-footer d-lg-flex align-items-center justify-content-center">
                                     <span class="d-lg-flex align-items-center"><i class="icon-user"></i>{{ post.author }}</span>
