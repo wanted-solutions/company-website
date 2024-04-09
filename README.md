@@ -24,6 +24,11 @@ To get the site running locally:
 
 Visit `http://localhost:4000` to view the site.
 
+If you encounter issues related to Content Security Policy, especially concerning loading images or executing scripts, you can temporarily disable the policy for local testing. To do this, comment out the Content Security Policy meta tag in the layouts/wanted-article.html and layouts/wanted-website.html files by adding a comment symbol (`<!-- -->`) around the line:
+`<!-- <meta http-equiv="Content-Security-Policy" content="{{ site.http_csp }} -->`>
+
+
+
 ## Contributing
 
 While we value the spirit of community and collaboration, this project is not open for public contributions. It is provided for informational purposes only. We appreciate your interest and encourage you to reach out to us directly at ping@wanted.solutions for any inquiries or potential collaboration opportunities.
