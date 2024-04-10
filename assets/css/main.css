@@ -2390,6 +2390,7 @@ header .navbar-expand .navbar-brand img {
     margin-bottom: 30px;
 }
 
+
 .card {
     position: relative;
     z-index: 1;
@@ -2421,6 +2422,7 @@ header .navbar-expand .navbar-brand img {
 .card p {
     margin-top: 0;
     white-space: pre-wrap;
+    color: white;
 }
 
 .card-img-top {
