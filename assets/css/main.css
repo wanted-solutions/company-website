@@ -4344,7 +4344,7 @@ footer .copyright a:not(.btn) {
     
     /* #endregion Feature */
 }
-}
+
 
 @media(max-width: 374px) {
 
@@ -4402,4 +4402,8 @@ body code.hljs {
 
 body time.published, body span.author span {
     color: var(--primary-color) !important;
+}
+
+.copy-registration {
+    font-size: 12px;
 }
