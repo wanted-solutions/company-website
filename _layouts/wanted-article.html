@@ -175,7 +175,8 @@
                     </div>
                     <div class="swiper-container mid-slider items">
                         <div class="swiper-wrapper">
-                            {% for post in site.posts limit:9 %}
+                            {% assign posts = site.posts | where_exp:"post","post.url != page.url" %}
+                            {% for post in posts limit:9 %}
                                 <div class="swiper-slide slide-center item">
                                     <a href="{{ post.url }}" title="{{ post.title }}" class="row card p-0 text-center">
                                         <div class="image-over">
