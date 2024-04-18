@@ -4407,3 +4407,7 @@ body time.published, body span.author span {
 .copy-registration {
     font-size: 12px;
 }
+
+body article p {
+    text-align: left !important;
+}
