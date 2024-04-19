@@ -1,8 +1,37 @@
 ---
 layout: wanted-website
 page_id: index
+classes: home
 lang: en
 ---
+<!-- Rich Snippets -->
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "WANTED.solutions s.r.o.",
+      "url": "https://wanted.solutions/",
+      "logo": "https://wanted.solutions/assets/branding/logo-primary.png",
+      "description": "At WANTED.solutions we understand the ever-evolving challenges in the IT world. That's why we offer a comprehensive set of solutions tailored to tackle your unique problems head-on. From cutting-edge software development to robust infrastructure management, our team of experts is ready to help you navigate the digital landscape with confidence. Trust WANTED Solutions to be your reliable partner in overcoming any IT obstacle and achieving your business goals.",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "ping@wanted.solutions",
+          "contactType": "Customer support",
+          "areaServed": "Czech Republic",
+          "availableLanguage": ["English"]
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Příčná 1892/4",
+        "addressLocality": "Prague 1",
+        "postalCode": "110 00",
+        "addressCountry": "CZ"
+      }
+    }
+    </script>
+    
 
 <!-- Hero -->
 <section id="slider" class="hero p-0 odd featured all">
@@ -15,7 +44,7 @@ lang: en
                         <div class="left align-self-center text-center text-md-left">
                             <h1 class="title effect-static-text">YOUR CHALLENGES<br />OUR SOLUTIONS</h1>
                             <!-- <p data-aos="zoom-out-up" data-aos-delay="800" class="description">WANTED.<small>SOLUTIONS</small></p> -->
-                            <a href="#footer" data-aos="zoom-out-up" data-aos-delay="1200"
+                            <a href="#features" data-aos="zoom-out-up" data-aos-delay="1200"
                                 class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn dark-button"><i
                                     class="icon-cup"></i>GET STARTED</a>
                         </div>
@@ -260,16 +289,14 @@ lang: en
                 <div class="swiper-wrapper">
                     {% for post in site.posts limit:9 %}
                     <div class="swiper-slide slide-center item">
-                        <div class="row card p-0 text-center">
+                        <a href="{{ post.url }}" title="{{ post.title }}" class="row card p-0 text-center">
                             <div class="image-over">
                                 <img loading="lazy" data-mask="70" src="{{ post.image }}"
                                     alt="{{ post.title }} ilustration image">
                             </div>
                             <div class="card-caption col-12 p-0">
                                 <div class="card-body">
-                                    <a href="{{ post.url }}">
-                                        <h3 class="m-0">{{ post.title }}</h3>
-                                    </a>
+                                    <h3 class="m-0">{{ post.title }}</h3>
                                 </div>
                                 <div class="card-footer d-lg-flex align-items-center justify-content-center">
                                     <span class="d-lg-flex align-items-center"><i class="icon-user"></i>{{ post.author
@@ -278,7 +305,7 @@ lang: en
                                         date_to_string: "ordinal" }}</span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     {% endfor %}
                 </div>

@@ -4352,6 +4352,7 @@ footer .copyright a:not(.btn) {
     /* #endregion Feature */
 }
 
+
 @media(max-width: 374px) {
 
     /* #region General */
@@ -4413,6 +4414,11 @@ body code.hljs {
 body time.published, body span.author span {
     color: var(--primary-color) !important;
 }
-/* body .offers .items .item {
-    margin-bottom: 20;
-} */
+
+.copy-registration {
+    font-size: 12px;
+}
+
+body article p {
+    text-align: left !important;
+}

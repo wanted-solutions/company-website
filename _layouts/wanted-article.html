@@ -8,8 +8,6 @@
         Basic Page Needs
         =============================================== -->
         <meta charset="utf-8">
-        <meta name="robots" content="noindex, nofollow">
-        <!-- <meta http-equiv="Content-Security-Policy" content="{{ site.http_csp }}"> -->
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,6 +24,7 @@
         <meta property="og:type" content="article" />
         <meta property="og:url" content="{{ page.url }}" />
         <meta property="og:image" content="{{ site.url }}/{{ page.image }}" />
+        <meta property="article:author" content="{{ page.author }}">     
 
         <!-- ==============================================
         Favicons
@@ -141,12 +140,14 @@
                     <main class="col-12 p-0">
                         <div class="row">
                             <div class="col-12 align-self-center">
+                                <article>
                                 {% if page.hero %}
                                 {% else %}
                                     <h1 class="featured mt-0 ml-0 title effect-static-text">{{ page.title }}</h1>
                                 {% endif %}
-                                <article>
-                                    {{ content }}
+                                    <div class="content">
+                                        {{ content }}
+                                    </div>
                                 </article>
                                 <!-- Post Holder -->
                                 <ul class="mb-5 post-holder">
@@ -176,24 +177,23 @@
                     </div>
                     <div class="swiper-container mid-slider items">
                         <div class="swiper-wrapper">
-                            {% for post in site.posts limit:9 %}
+                            {% assign posts = site.posts | where_exp:"post","post.url != page.url" %}
+                            {% for post in posts limit:9 %}
                                 <div class="swiper-slide slide-center item">
-                                    <div class="row card p-0 text-center">
+                                    <a href="{{ post.url }}" title="{{ post.title }}" class="row card p-0 text-center">
                                         <div class="image-over">
                                             <img loading="lazy" src="{{ post.image }}" alt="{{ post.title }} ilustration image">
                                         </div>
                                         <div class="card-caption col-12 p-0">
                                             <div class="card-body">
-                                                <a href="{{ post.url }}">
-                                                    <h3 class="m-0">{{ post.title }}</h3>
-                                                </a>
+                                                <h3 class="m-0">{{ post.title }}</h3>
                                             </div>
                                             <div class="card-footer d-lg-flex align-items-center justify-content-center">
                                                 <span class="d-lg-flex align-items-center"><i class="icon-user"></i>{{ post.author }}</span>
                                                 <span class="d-lg-flex align-items-center"><i class="icon-clock"></i>{{ post.date | date_to_string: "ordinal" }}</span>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             {% endfor %}
                         </div>

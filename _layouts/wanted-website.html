@@ -8,8 +8,6 @@
         Basic Page Needs
         =============================================== -->
         <meta charset="utf-8">
-        <meta name="robots" content="noindex, nofollow">
-        <!-- <meta http-equiv="Content-Security-Policy" content="{{ site.http_csp }}"> -->
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -91,7 +89,7 @@
         
     </head>
 
-    <body class="theme-mode-dark body-mode-dark">
+    <body class="theme-mode-dark body-mode-dark {{ page.classes }}">
         <script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -124,7 +122,6 @@
         <script defer src="/assets/js/vendor/shuffle.min.js"></script>
         <script defer src="/assets/js/vendor/cookie-notice.min.js"></script>
         <script defer src="/assets/js/vendor/particles.min.js"></script>
-        <script defer src="/assets/js/main.js"></script>
         <script defer src="/assets/js/main.js?v=1"></script>
 
         <!-- #endregion Global ========================= -->
