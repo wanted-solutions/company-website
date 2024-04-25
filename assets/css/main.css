@@ -79,6 +79,7 @@ body .odd {
     color: var(--secondary-p-color);
 }
 
+
 body.body-mode-dark {
     background-color: var(--secondary-bg-color-2);
     color: var(--secondary-p-color);
@@ -4392,6 +4393,11 @@ body a.gdpr-cookie-notice-nav-item:not(.btn) {
     .gdpr-cookie-notice-nav-item-btn {
         color: var(--primary-p-color) !important;
     }
+}
+
+.gdpr-cookie-notice-modal .gdpr-cookie-notice-modal-content .gdpr-cookie-notice-modal-header h2,
+.gdpr-cookie-notice-modal .gdpr-cookie-notice-modal-content .gdpr-cookie-notice-modal-cookies .gdpr-cookie-notice-modal-cookie .gdpr-cookie-notice-modal-cookie-row h3  {
+    color: var(--dark-grey-color);
 }
 
 body .card-footer span {
