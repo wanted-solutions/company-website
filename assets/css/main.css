@@ -2231,6 +2231,7 @@ header .navbar-expand .navbar-brand img {
     border: 1px solid;
     border-color: var(--primary-bg-color-2);
     color: var(--primary-t-color);
+    white-space: nowrap;
 }
 
 .body-mode-dark .pagination .page-item .page-link {

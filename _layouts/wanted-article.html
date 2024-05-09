@@ -61,38 +61,11 @@
     <link rel="stylesheet" media="screen" href="/assets/css/default.css">
 
     <!-- ==============================================
-        Theme Settings
+        Rich Snippets
         =============================================== -->
-    <style>
-        :root {
-            --header-bg-color: #191919;
-            --nav-item-color: #f5f5f5;
-            --top-nav-item-color: #f5f5f5;
-            --hero-bg-color: #040402;
-
-            --section-1-bg-color: #191919;
-            --section-2-bg-color: #191919;
-            --section-3-bg-color: #191919;
-            --section-4-bg-color: #191919;
-            --section-5-bg-color: #191919;
-            --section-6-bg-color: #191919;
-            --section-7-bg-color: #191919;
-
-            --footer-bg-color: #191919;
-
-            --dark-grey-color: #333333;
-            --primary-color: #e0812f;
-            --secondary-color: #ca2e26;
-        }
-
-        html,
-        body {
-            background-color: var(--header-bg-color) !important;
-            color: var(--top-nav-item-color) !important;
-        }
-    </style>
 
     {% if page.content %}
+
     <script type="application/ld+json">
         {
         "@context": "http://schema.org",
@@ -129,6 +102,10 @@
     {% endif %}
 
 </head>
+
+    <!-- ==============================================
+        Body Content
+        =============================================== -->
 
 <body class="theme-mode-dark body-mode-dark">
     <script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
