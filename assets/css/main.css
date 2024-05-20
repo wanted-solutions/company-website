@@ -4052,10 +4052,6 @@ footer .copyright a:not(.btn) {
         margin-bottom: 50px;
     }
 
-    /* body .offers .items .item {
-        margin-bottom: 0;
-    } */
-
     body .blog-grid:not(.masonry) .items .item {
         margin-bottom: 0;
     }
@@ -4063,6 +4059,7 @@ footer .copyright a:not(.btn) {
     body .blog-grid:not(.masonry) .items .item {
         margin-bottom: 30px;
     }
+    
     .offers .items .item .card-item{
         height: 250px;
     }
