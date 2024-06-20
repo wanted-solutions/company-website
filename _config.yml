@@ -31,14 +31,9 @@ url: "https://wanted.solutions" # the base hostname & protocol for your site, e.
 github_username:  wanted-solutions
 http_csp: "default-src 'self'; font-src 'self' data: fonts.gstatic.com; script-src 'self' 'unsafe-inline' www.googletagmanager.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src https://*; connect-src 'self' *.google-analytics.com; child-src 'none';"
 
-permalink: /:categories/:title/
-
 sass:
     sass_dir: _sass
     style: compressed
-
-paginate: 12
-paginate_path: "/articles/:num/"
 
 languages: ["en", "cz"]
 default_lang: "en"
@@ -51,6 +46,19 @@ plugins:
   - jekyll-polyglot
   - jekyll-paginate
   - jekyll-sitemap
+
+paginate: 12
+paginate_path: "/articles/:num/"
+  
+collections:
+  members:
+    output: false
+  posts:
+    output: true
+    permalink: /:categories/:title/
+  offered-items:
+    output: true  
+    permalink: /:collection/:title/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
