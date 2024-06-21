@@ -75,6 +75,9 @@
     --card-bg-color: #f5f5f5;
 
     --footer-bg-color: #111111;
+
+    --primary-bg-card-color:rgb(60, 60, 60);
+    --secondary-bg-card-color:#1A1A1A;
 }
 
 /* #endregion Root */
