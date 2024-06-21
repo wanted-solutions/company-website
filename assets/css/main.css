@@ -4018,7 +4018,7 @@ footer .copyright a:not(.btn) {
     }
     
     .team-card {
-       height: 407px; 
+       max-height: 350px; 
     }
 
     body p,
