@@ -1476,10 +1476,6 @@ header .navbar-expand.relative {
     position: relative;
 }
 
-header .navbar-expand .navbar-nav {
-    display: inline-block;
-}
-
 header .navbar-expand .navbar-nav.toggle {
     display: none;
 }
@@ -1490,7 +1486,6 @@ header .navbar-expand .navbar-nav.toggle i {
 .navbar-nav.toggle {
     margin: 0;
 }
-
 
 header .navbar-expand .navbar-brand {
     padding: 0;
