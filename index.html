@@ -229,7 +229,8 @@ language: en
             </div>
             <div class="swiper-container mid-slider items">
                 <div class="swiper-wrapper">
-                    {% for post in site.posts limit:9 %}
+                    {% for post in site.posts limit:12 %}
+                    {% if post.language == "en" %}
                     <div class="swiper-slide slide-center item">
                         <a href="{{ post.url }}" title="{{ post.title }}" class="row card p-0 text-center">
                             <div class="image-over">
@@ -247,6 +248,7 @@ language: en
                             </div>
                         </a>
                     </div>
+                    {% endif %}
                     {% endfor %}
                 </div>
                 <div class="swiper-pagination"></div>

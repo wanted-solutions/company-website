@@ -36,7 +36,6 @@ sass:
     style: compressed
 
 languages: ["en", "cs"]
-default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css", "public", "assets"]
 parallel_localization: true
 # Build settings
@@ -45,30 +44,24 @@ plugins:
   - jekyll-feed
   - jekyll-polyglot
   - jekyll-sitemap
-  - jekyll-paginate-v2
+  - jekyll-paginate
+  - jekyll-paginate-multiple
 
-pagination:
-  enabled: true
-  paginate_path: "/posts/en"
-  per_page: 24
-  permalink: '/title/:num/'
-  title: 'collection/:title'
-  sort_field: 'date'
-  sort_reverse: true
-  lang: "en"
-  collection: 'posts'
-
+paginate_multiple:
+  - paginate: 12
+    paginate_path: 'en/articles/:num/'
+    sub_dir: '/en'
+  - paginate: 12
+    paginate_path: 'cs/clanky/:num/'
+    sub_dir: '/cs'
 
 collections:
-  members:
-    output: false
   posts:
     output: true
-    permalink: /:categories/:title/
+  members:
+    output: false
   offered-items:
     output: true  
-    permalink: /:collection/:title/
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.

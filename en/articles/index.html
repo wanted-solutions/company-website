@@ -1,11 +1,9 @@
 ---
 layout: wanted-website
-title: articles
 author: Martin Hrášek
-page_id: articles
-pagination:
+paginate_multiple:
     enabled: true
-published: true
+    language: en
 ---
 <!-- Hero -->
 <div class="navbar-holder"></div>
@@ -23,7 +21,6 @@ published: true
             <main class="col-12 p-0">
                 <div class="bricklayer items columns-3">
                     {% for post in paginator.posts %}
-                    <!-- {% if post.language == 'en' %} -->
                         <a href="{{ post.url }}" title="{{ post.title }}" class="card p-0 text-center item">
                             <div class="image-over">
                                 <img loading="lazy" src="{{ post.image }}" alt="{{ post.title }} ilustration image">
@@ -38,7 +35,6 @@ published: true
                                 </div>
                             </div>
                         </a>
-                    <!-- {% endif %} -->
                     {% endfor %}
                 </div>
             </main>

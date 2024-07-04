@@ -6,9 +6,15 @@
         <div class="container header div">
 
             <!-- Navbar Brand-->
+            {% if page.language == 'en' %}
             <a class="navbar-brand" href="/">
                 <img src="/assets/website/logo-primary.png" alt="WANTED.solutions logo">
             </a>
+            {% else %}
+            <a class="navbar-brand" href="/cs">
+                <img src="/assets/website/logo-primary.png" alt="WANTED.solutions logo">
+            </a>
+            {% endif %}
 
             <!-- Nav holder -->
             <div class="ml-auto"></div>
@@ -30,13 +36,13 @@
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a href="#features" title="Odkaz na stránku - Funkce" class="nav-link smooth-anchor">Funkce</a>
+                    <a href="cs/#features" title="Odkaz na stránku - Funkce" class="nav-link smooth-anchor">Funkce</a>
                 </li>
                 <li class="nav-item">
                     <a href="/cs/o-nas/" title="Odkaz na stránku - O nás" class="nav-link">O nás</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#footer" title="Odkaz na stránku - Kontakt" class="nav-link smooth-anchor">Kontakt</a>
+                    <a href="cs/#footer" title="Odkaz na stránku - Kontakt" class="nav-link smooth-anchor">Kontakt</a>
                 </li>
                 <li class="nav-item">
                     <a href="/cs/clanky/" title="Odkaz na stránku - Články" class="nav-link">Blog</a>
