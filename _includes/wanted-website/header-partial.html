@@ -15,19 +15,33 @@
 
             <!-- Navbar Items -->
             <ul class="navbar-nav items">
-
+                {% if page.language == 'en' %}
                 <li class="nav-item">
                     <a href="#features" title="Link to features paragraph" class="nav-link smooth-anchor">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/about/" title="Link to about us page" class="nav-link">About Us</a>
+                    <a href="/en/about/" title="Link to about us page" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a href="#footer" title="Link to contact page" class="nav-link smooth-anchor">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/articles/" title="Link to blog articles" class="nav-link">Blog</a>
+                    <a href="/en/articles/" title="Link to blog articles" class="nav-link">Blog</a>
                 </li>
+                {% else %}
+                <li class="nav-item">
+                    <a href="#features" title="Odkaz na stránku - Funkce" class="nav-link smooth-anchor">Funkce</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/cs/o-nas/" title="Odkaz na stránku - O nás" class="nav-link">O nás</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#footer" title="Odkaz na stránku - Kontakt" class="nav-link smooth-anchor">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/cs/clanky/" title="Odkaz na stránku - Články" class="nav-link">Blog</a>
+                </li>
+                {% endif %}
             </ul>
 
             <!-- Navbar Icons -->
@@ -38,6 +52,15 @@
                 <li class="nav-item social">
                     <a href="https://www.linkedin.com/company/wanted-solutions" target="_blank" class="nav-link"><i class="icon-social-linkedin"></i></a>
                 </li>
+                {% if page.language == 'en' %}
+                <li class="nav-item social">
+                    <a href="/cs" class="nav-link"><img class="flag" src="/assets/fonts/icons/cz-flag.png" alt="Čeština"></a>
+                </li>
+                {% else %}
+                <li class="nav-item social">
+                    <a href="/" class="nav-link"><img class="flag" src="/assets/fonts/icons/eng-flag.png" alt="English"></a>
+                </li>
+                {% endif %}
             </ul>
 
             <!-- Navbar Toggle -->
@@ -62,5 +85,5 @@
             </ul>
         </div>
     </nav>
-
+    
 </header>

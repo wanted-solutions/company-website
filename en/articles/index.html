@@ -1,0 +1,88 @@
+---
+layout: wanted-website
+title: articles
+author: Martin Hrášek
+page_id: articles
+pagination:
+    enabled: true
+language: en
+published: true
+---
+<!-- Hero -->
+<div class="navbar-holder"></div>
+
+<!-- Blog -->
+<section id="blog" class="section-1 body-mode-dark showcase blog-grid masonry news odd featured all">
+    <div class="container">
+        <div class="row intro">
+            <div class="col-12 col-md-12 align-self-center text-center text-md-left">
+                <h2 class="featured">Latest Articles</h2>
+                <p>We publish exclusive content on our blog about various topics. From tutorials to company press releases, you can always find fresh content on our blog and social media.</p>
+            </div>
+        </div>
+        <div class="row content blog-grid masonry" data-aos="zoom-in" data-aos-delay="250" data-aos-anchor="body">
+            <main class="col-12 p-0">
+                <div class="bricklayer items columns-3">
+                    {% for post in paginator.posts %}
+                    <!-- {% if post.language == 'en' %} -->
+                        <a href="{{ post.url }}" title="{{ post.title }}" class="card p-0 text-center item">
+                            <div class="image-over">
+                                <img loading="lazy" src="{{ post.image }}" alt="{{ post.title }} ilustration image">
+                            </div>
+                            <div class="card-caption col-12 p-0">
+                                <div class="card-body">
+                                    <h4>{{ post.title }}</h4>
+                                </div>
+                                <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                    <span class="d-lg-flex align-items-center"><i class="icon-user"></i>{{ post.author }}</span>
+                                    <span class="d-lg-flex align-items-center"><i class="icon-clock"></i>{{ post.date | date_to_string: "ordinal" }}</span>
+                                </div>
+                            </div>
+                        </a>
+                    <!-- {% endif %} -->
+                    {% endfor %}
+                </div>
+            </main>
+        </div>
+        {% if paginator.total_pages > 1 %}
+        <!-- Pagination -->
+        <div class="row">
+            <div class="col-12">
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        {% if paginator.previous_page %}
+                        <li class="page-item">
+                            <a class="page-link" href="{{ paginator.previous_page_path }}" tabindex="-1">
+                                <i class="icon-arrow-left"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if paginator.previous_page %}
+                        <li class="page-item">
+                            <a class="page-link" href="{{ paginator.previous_page_path }}" tabindex="-1">
+                                {{ paginator.previous_page }}
+                            </a>
+                        </li>
+                        {% endif %}
+                        <li class="page-item active"><span class="page-link" href="#">{{ paginator.page }}</span></li>
+                        {% if paginator.next_page %}
+                        <li class="page-item">
+                            <a class="page-link" href="{{ paginator.next_page }}" tabindex="+1">
+                                {{ paginator.next_page }}
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if paginator.next_page %}
+                        <li class="page-item">
+                            <a class="page-link" href="{{ paginator.next_page_path }}" tabindex="+1">
+                                <i class="icon-arrow-right"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>

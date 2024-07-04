@@ -106,6 +106,9 @@ pre, code {
     margin: 1rem 0;
     color: var(--primary-color);
 }
+.flag {
+    height: 25px;
+}
 
 blockquote, q {
     display: block;

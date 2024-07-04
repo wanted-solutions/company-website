@@ -1,0 +1,57 @@
+---
+layout: wanted-website
+title: WANTED.solutions tym
+page_id: tym
+author: Martin Hrášek
+language: cs
+language_reference: posts
+published: true
+---
+
+<!-- Team -->
+<section
+  id="blog" class="section-1 body-mode-dark showcase news odd featured all">
+  <div class="container">
+    <div class="row intro">
+      <div class="col-12 col-md-12 align-self-center text-center text-md-left">
+        <h2 class="featured">Náš tým</h2>
+        <p>
+          Ve Wanted Solutions věříme, že úspěch každého projektu je poháněn talentovaným týmem. Naši odborníci jsou srdcem naší společnosti, každý z nich přináší jedinečné dovednosti a vášeň pro technologie. Od zkušených architektů řešení po talentované softwarové inženýry a oddané projektové manažery, pracujeme společně na dodávání řešení na míru, která splňují rostoucí potřeby našich klientů. Připojte se k nám a oslavte lidi stojící za naším úspěchem!
+        </p>
+      </div>
+    </div>
+    <div class="row content" data-aos="zoom-in" data-aos-delay="250" data-aos-anchor="body">
+      <main class="col-12 p-0">
+        <div class="bricklayer items columns-3">
+          {% for item in site.members %}
+            <div class="item text-center card my-3 team-card">
+                <img src="{{ item.image }}" alt="{{ item.name }}" style="width: 100px; height: 100px" class="person mx-auto d-block"/>
+                <h3 class="employee-name">{{ item.name }}</h3>
+                <p><i>{{ item.position }}</i></p>
+                <ul class="navbar-nav social share-list mx-auto justify-content-center">
+                  <li class="nav-item">
+                    <a href="{{ item.email }}" target="_blank" class="nav-link"
+                      ><i class="icon-envelope ml-2 mr-2"></i
+                    ></a>
+                  </li>
+                  {% if item.github %}
+                  <li class="nav-item">
+                    <a href="{{ item.github }}" target="_blank" class="nav-link"
+                      ><i class="icon-social-github ml-2 mr-2"></i
+                    ></a>
+                  </li>
+                  {% endif %}
+                  {% if item.linkedin %}
+                  <li class="nav-item">
+                    <a
+                      href="{{ item.linkedin }}" target="_blank" class="nav-link"><i class="icon-social-linkedin ml-2 mr-2" ></i></a>
+                  </li>
+                  {% endif %}
+                </ul>
+            </div>
+          {% endfor %}
+        </div>
+      </main>
+    </div>
+  </div>
+</section>

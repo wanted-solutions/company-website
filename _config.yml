@@ -35,7 +35,7 @@ sass:
     sass_dir: _sass
     style: compressed
 
-languages: ["en", "cz"]
+languages: ["en", "cs"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css", "public", "assets"]
 parallel_localization: true
@@ -44,12 +44,19 @@ parallel_localization: true
 plugins:
   - jekyll-feed
   - jekyll-polyglot
-  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-paginate-v2
 
-paginate: 12
-paginate_path: "/articles/:num/"
-  
+pagination:
+  enabled: true
+  per_page: 12
+  permalink: '/title/:num/'
+  title: 'collection/:title'
+  sort_field: 'date'
+  sort_reverse: true
+  language: en
+  collection: 'posts'
+
 collections:
   members:
     output: false
