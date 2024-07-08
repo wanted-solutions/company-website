@@ -34,6 +34,9 @@
                 <li class="nav-item">
                     <a href="/en/articles/" title="Link to blog articles" class="nav-link">Blog</a>
                 </li>
+                <li class="nav-item social">
+                    <a href="/cs" class="nav-link"><img class="flag" src="/assets/fonts/icons/cz-flag.png" alt="Čeština"></a>
+                </li>
                 {% else %}
                 <li class="nav-item">
                     <a href="cs/#features" title="Odkaz na stránku - Funkce" class="nav-link smooth-anchor">Funkce</a>
@@ -47,6 +50,9 @@
                 <li class="nav-item">
                     <a href="/cs/clanky/" title="Odkaz na stránku - Články" class="nav-link">Blog</a>
                 </li>
+                <li class="nav-item social">
+                    <a href="/en" class="nav-link"><img class="flag" src="/assets/fonts/icons/eng-flag.png" alt="English"></a>
+                </li>
                 {% endif %}
             </ul>
 
@@ -58,15 +64,6 @@
                 <li class="nav-item social">
                     <a href="https://www.linkedin.com/company/wanted-solutions" target="_blank" class="nav-link"><i class="icon-social-linkedin"></i></a>
                 </li>
-                {% if page.language == 'en' %}
-                <li class="nav-item social">
-                    <a href="/cs" class="nav-link"><img class="flag" src="/assets/fonts/icons/cz-flag.png" alt="Čeština"></a>
-                </li>
-                {% else %}
-                <li class="nav-item social">
-                    <a href="/en" class="nav-link"><img class="flag" src="/assets/fonts/icons/eng-flag.png" alt="English"></a>
-                </li>
-                {% endif %}
             </ul>
 
             <!-- Navbar Toggle -->

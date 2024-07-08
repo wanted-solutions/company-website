@@ -2398,7 +2398,7 @@ header .navbar-expand .navbar-brand img {
     position: relative;
     z-index: 1;
     width: 100%;
-    padding: 30px;
+    padding: 35px;
     border: none;
     border-radius: 2px;
     background-image: linear-gradient(to bottom left, var(--primary-bg-card-color), var(--secondary-bg-card-color));
@@ -2426,6 +2426,7 @@ header .navbar-expand .navbar-brand img {
     margin-top: 0;
     white-space: pre-wrap;
     color: white;
+    height: 144px;
 }
 
 .card-img-top {
@@ -3890,6 +3891,10 @@ footer .copyright a:not(.btn) {
     body .columns-5 .bricklayer-column-sizer,
     body .columns-6 .bricklayer-column-sizer {
         width: 33.3333%;
+
+    }
+    body .card {
+        min-height: 350px;
     }
 
     body .card-columns {
