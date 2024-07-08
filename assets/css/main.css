@@ -2398,7 +2398,7 @@ header .navbar-expand .navbar-brand img {
     position: relative;
     z-index: 1;
     width: 100%;
-    padding: 35px;
+    padding: 30px;
     border: none;
     border-radius: 2px;
     background-image: linear-gradient(to bottom left, var(--primary-bg-card-color), var(--secondary-bg-card-color));
@@ -3990,7 +3990,7 @@ footer .copyright a:not(.btn) {
         width: 50%;
     }
 
-    body .card-columns {
+    body .card-columns { 
         column-count: 2;
     }
 
