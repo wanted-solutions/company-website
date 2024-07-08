@@ -37,3 +37,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 # multiple-pagination
 gem "jekyll-paginate"
 gem "jekyll-paginate-multiple"
+
+#redirect of main page to /cs
+gem 'jekyll-redirect-from'
