@@ -1,0 +1,57 @@
+---
+layout: wanted-article
+title: "HTMX: Deklarativní způsob tvorby webových aplikací"
+date: 2024-04-04 23:59:31 +0100
+author: Martin Hrášek
+categories: software-development
+image: /assets/posts/htmx-introduction.jpg
+language: cs
+language_reference: posts
+---   
+<p>Ve světě webového vývoje získaly frontendové frameworky jako React, Angular a Vue.js obrovskou popularitu díky možnosti vytvářet dynamické a interaktivní uživatelské rozhraní. Nicméně existuje lehčí alternativa, která získává na oblibě mezi vývojáři: HTMX.</p>
+<h2>Co je HTMX?</h2>
+<p>HTMX je knihovna, která vám umožňuje vytvářet dynamické webové aplikace pomocí standardních HTML atributů. Využívá sílu HTML a rozšiřuje jej o další atributy, které umožňují provádět HTTP požadavky, aktualizovat části DOM a zpracovávat uživatelské interakce bez potřeby složitých JavaScriptových frameworků.</p>
+<h2>Idea za HTMX</h2>
+<p>Hlavní myšlenka HTMX spočívá v přenesení jednoduchosti a deklarativní povahy HTML do vývoje webových aplikací. Místo toho, aby se silně spoléhalo na JavaScript pro manipulaci s DOM a zpracování uživatelských interakcí, HTMX vám umožňuje definovat tyto chování přímo v HTML pomocí speciálních atributů.</p>
+<h2>Výhody HTMX</h2>
+<ul>
+    <li>Jednoduchost: HTMX má mělkou křivku učení, což usnadňuje vývojářům začít a rychle pochopit základní koncepty.</li>
+    <li>Deklarativní přístup: S HTMX můžete definovat chování a interakce deklarativně ve vašem HTML, což zlepšuje čitelnost a udržovatelnost vašeho kódu.</li>
+    <li>Lehkost: HTMX je lehká knihovna, což znamená, že má minimální dopad na výkon a doby načítání vaší aplikace.</li>
+    <li>Progresivní vylepšení: HTMX se řídí principy progresivního vylepšení, což umožňuje vaší aplikaci fungovat i v případě, že je JavaScript zakázán.</li>
+</ul>
+<h2>Nevýhody HTMX</h2>
+<ul>
+    <li>Omezený ekosystém: Ve srovnání s populárními frontendovými frameworky má HTMX menší ekosystém a komunitu, což znamená méně třetích stran knihoven a zdrojů.</li>
+    <li>Nedostatek nástrojů: HTMX nemá rozsáhlou podporu nástrojů jako některé frontendové frameworky, což může omezit pokročilé vývojové pracovní postupy.</li>
+</ul>
+<h2>Srovnání HTMX s frontendovými frameworky</h2>
+<p>Při srovnání HTMX s frontendovými frameworky jako React, Angular a Vue.js je důležité zvážit následující aspekty:</p>
+<ul>
+    <li>Složitost: Frontendové frameworky často mají strmější křivku učení a vyžadují více nastavení a konfigurace ve srovnání s HTMX.</li>
+    <li>Výkon: Zatímco frontendové frameworky poskytují silné abstrakce a optimalizace, lehká povaha HTMX může vést k lepšímu výkonu v určitých situacích.</li>
+    <li>Flexibilita: Frontendové frameworky nabízejí větší flexibilitu a rozšiřitelnost, což vám umožňuje vytvářet složité a vysoce interaktivní aplikace. HTMX je na druhé straně vhodnější pro jednodušší případy použití.</li>
+</ul>
+<h2>Jednoduchý případ použití s backendem v GoLang</h2>
+<p>Pro demonstraci jednoduchosti HTMX si vezměme jednoduchý případ použití, kde máme backend v GoLang, který poskytuje webovou stránku s tlačítkem. Po kliknutí na tlačítko chceme provést HTTP požadavek na backend a aktualizovat konkrétní část stránky s odpovědí.</p>
+<pre><code class="language-html">
+&lt;!-- HTML --&gt;
+&lt;button hx-post="/increment" hx-target="#result"&gt;Increment&lt;/button&gt;
+&lt;div id="result"&gt;0&lt;/div&gt;
+</code></pre>
+<pre><code class="language-go">
+// GoLang Backend
+func incrementHandler(w http.ResponseWriter, r *http.Request) {
+    count, _ := strconv.Atoi(r.FormValue("count"))
+    count++
+    fmt.Fprintf(w, "%d", count)
+}
+</code></pre>
+<p>V tomto příkladu má tlačítko atribut <code class="inline">hx-post</code>, který určuje URL pro provedení HTTP POST požadavku při kliknutí. Atribut <code class="inline">hx-target</code> označuje element, kam by měla být vložena odpověď.</p>
+<p>Na backendu funkce <code class="inline">incrementHandler</code> získá aktuální hodnotu počtu z požadavku, zvýší ji a pošle zpět aktualizovaný počet jako odpověď. HTMX automaticky aktualizuje element <code class="inline">#result</code> s novým počtem.</p>
+<h2>Výhody deklarativního přístupu</h2>
+<p>Jednou z klíčových výhod použití HTMX je jeho deklarativní přístup k webovému vývoji. Definováním chování a interakcí přímo v HTML markup můžete udělat svůj kód čitelnější, udržovatelnější a snadněji pochopitelný.</p>
+<p>S HTMX nemusíte psát složitý JavaScript kód pro manipulaci s DOM a zpracování uživatelských interakcí. Místo toho můžete využít sílu HTML atributů k deklarativnímu určení, jak by se vaše aplikace měla chovat. Tento deklarativní přístup snižuje kognitivní zátěž vývojářů a umožňuje jim soustředit se na hlavní funkčnost jejich aplikace.</p>
+<h2>Závěr</h2>
+<p>HTMX nabízí osvěžující přístup k vytváření webových aplikací tím, že přináší jednoduchost a deklarativní povahu HTML do popředí. Ačkoliv nemá rozsáhlý ekosystém a podporu nástrojů jako populární frontendové frameworky, HTMX exceluje svou jednoduchostí, lehkostí a dodržováním principů progresivního vylepšení.</p>
+<p>Pokud hledáte jednoduchý způsob, jak vytvářet dynamické webové aplikace bez složitosti plnohodnotných frontendových frameworků, HTMX rozhodně stojí za prozkoumání. Jeho deklarativní přístup a snadné použití z něj činí atraktivní volbu pro vývojáře, kteří si cení jednoduchosti a efektivity.</p>

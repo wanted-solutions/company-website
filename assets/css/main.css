@@ -106,6 +106,9 @@ pre, code {
     margin: 1rem 0;
     color: var(--primary-color);
 }
+.flag {
+    height: 25px;
+}
 
 blockquote, q {
     display: block;
@@ -2423,6 +2426,7 @@ header .navbar-expand .navbar-brand img {
     margin-top: 0;
     white-space: pre-wrap;
     color: white;
+    height: 144px;
 }
 
 .card-img-top {
@@ -3887,6 +3891,10 @@ footer .copyright a:not(.btn) {
     body .columns-5 .bricklayer-column-sizer,
     body .columns-6 .bricklayer-column-sizer {
         width: 33.3333%;
+
+    }
+    body .card {
+        min-height: 350px;
     }
 
     body .card-columns {
@@ -3987,7 +3995,7 @@ footer .copyright a:not(.btn) {
         width: 50%;
     }
 
-    body .card-columns {
+    body .card-columns { 
         column-count: 2;
     }
 

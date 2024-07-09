@@ -39,8 +39,13 @@ GEM
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-paginate (1.1.0)
+    jekyll-paginate-multiple (0.1.0)
+      jekyll (>= 2.5)
+      jekyll-paginate (~> 1.1)
     jekyll-polyglot (1.8.0)
       jekyll (>= 4.0, >= 3.0)
+    jekyll-redirect-from (0.16.0)
+      jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
@@ -71,31 +76,31 @@ GEM
     rexml (3.2.6)
     rouge (4.2.0)
     safe_yaml (1.0.5)
-    sass-embedded (1.71.1-aarch64-linux-android)
+    sass-embedded (1.71.1-aarch64-linux)
       google-protobuf (~> 3.25)
-    sass-embedded (1.71.1-aarch64-linux-gnu)
+    sass-embedded (1.71.1-aarch64-linux-android)
       google-protobuf (~> 3.25)
     sass-embedded (1.71.1-aarch64-linux-musl)
       google-protobuf (~> 3.25)
-    sass-embedded (1.71.1-arm-linux-androideabi)
+    sass-embedded (1.71.1-arm-linux)
       google-protobuf (~> 3.25)
-    sass-embedded (1.71.1-arm-linux-gnueabihf)
+    sass-embedded (1.71.1-arm-linux-androideabi)
       google-protobuf (~> 3.25)
     sass-embedded (1.71.1-arm-linux-musleabihf)
       google-protobuf (~> 3.25)
     sass-embedded (1.71.1-arm64-darwin)
       google-protobuf (~> 3.25)
-    sass-embedded (1.71.1-x86-linux-android)
+    sass-embedded (1.71.1-x86-linux)
       google-protobuf (~> 3.25)
-    sass-embedded (1.71.1-x86-linux-gnu)
+    sass-embedded (1.71.1-x86-linux-android)
       google-protobuf (~> 3.25)
     sass-embedded (1.71.1-x86-linux-musl)
       google-protobuf (~> 3.25)
     sass-embedded (1.71.1-x86_64-darwin)
       google-protobuf (~> 3.25)
-    sass-embedded (1.71.1-x86_64-linux-android)
+    sass-embedded (1.71.1-x86_64-linux)
       google-protobuf (~> 3.25)
-    sass-embedded (1.71.1-x86_64-linux-gnu)
+    sass-embedded (1.71.1-x86_64-linux-android)
       google-protobuf (~> 3.25)
     sass-embedded (1.71.1-x86_64-linux-musl)
       google-protobuf (~> 3.25)
@@ -106,21 +111,21 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  aarch64-linux
   aarch64-linux-android
-  aarch64-linux-gnu
   aarch64-linux-musl
+  arm-linux
   arm-linux-androideabi
-  arm-linux-gnueabihf
   arm-linux-musleabihf
   arm64-darwin
   x86-linux
+  x86-linux
   x86-linux-android
-  x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
   x86_64-linux
+  x86_64-linux
   x86_64-linux-android
-  x86_64-linux-gnu
   x86_64-linux-musl
 
 DEPENDENCIES
@@ -128,7 +133,9 @@ DEPENDENCIES
   jekyll (~> 4.3.3)
   jekyll-feed (~> 0.12)
   jekyll-paginate
+  jekyll-paginate-multiple
   jekyll-polyglot
+  jekyll-redirect-from
   jekyll-sitemap
   minima (~> 2.5)
   tzinfo (>= 1, < 3)
