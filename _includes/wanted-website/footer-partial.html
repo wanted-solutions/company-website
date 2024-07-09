@@ -2,7 +2,11 @@
 <footer class="odd">
 
     <!-- Footer [links] -->
-    <section id="footer" class="footer">
+    {% if page.language == 'en' %}
+    <section id="en-footer" class="footer">
+    {% else %}
+    <section id="cs-footer" class="footer">
+    {% endif %}
         <div class="container">
             <div class="row items footer-widget">
                 <div class="col-12 col-lg-6 p-0">
