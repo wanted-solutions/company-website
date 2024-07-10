@@ -3474,6 +3474,10 @@ footer {
     background-color: var(--footer-bg-color);
 }
 
+.fujitsu-logo img {
+    height: 150px;
+}
+
 footer .brand .logo {
     font-size: 2.2rem;
     font-weight: 700;
@@ -3501,6 +3505,10 @@ footer .branding p {
 
 footer .title {
     margin-top: 0;
+}
+.linkedin {
+    display: flex;
+    justify-content: end;
 }
 
 footer .contacts {
@@ -3559,7 +3567,9 @@ footer .contacts li {
 footer .nav-item {
     margin: 0;
 }
-
+.socials {
+    padding-left: 15px;
+}
 footer .nav-item .nav-link {
     display: block;
     word-break: break-all;

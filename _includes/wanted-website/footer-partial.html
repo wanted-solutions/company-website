@@ -1,102 +1,80 @@
 <!-- Footer -->
 <footer class="odd">
-
     <!-- Footer [links] -->
-    {% if page.language == 'en' %}
-    <section id="en-footer" class="footer">
-    {% else %}
-    <section id="cs-footer" class="footer">
-    {% endif %}
-        <div class="container">
-            <div class="row items footer-widget">
-                <div class="col-12 col-lg-6 p-0">
-                    <div class="row">
-                        <div class="branding col-12 p-3 text-center text-lg-left item">
-                            <div class="brand">
-                                <a href="/" class="logo">                                
-                                    <img src="/assets/website/logo-primary-bottom-margin.webp" alt="WANTED.solution logo">
-                                </a>
-                            </div>
-                            <ul class="navbar-nav social share-list mt-0 ml-auto">
-                                <li class="nav-item">
-                                    <a href="https://www.github.com/wanted-solutions" target="_blank" class="nav-link"><i class="icon-social-github"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="https://www.linkedin.com/company/wanted-solutions" target="_blank" class="nav-link"><i class="icon-social-linkedin"></i></a>
-                                </li>
-                            </ul>
-                        </div>
+{% if page.language == 'en' %}
+<section id="en-footer" class="footer">
+    <div class="container">
+        <div class="row footer-all items footer-widget d-flex align-items-center">
+            <div class="footer-left col-12 col-lg-4 p-0 d-flex flex-column align-items-center">
+                <div class="branding col-12 text-center item footer-ws-logo">
+                    <div class="brand">
+                        <a href="/" class="logo">                                
+                            <img src="/assets/website/logo-primary-bottom-margin.webp" alt="WANTED.solution logo">
+                        </a>
+                    </div>
+                    <div class="socials">
+                        <ul class="navbar-nav social share-list mt-0">
+                            <li class="nav-item">
+                                <a href="https://www.github.com/wanted-solutions" target="_blank" class="nav-link"><i class="icon-social-github"></i></a>
+                            </li>
+                            <li class="nav-item linkedin">
+                                <a href="https://www.linkedin.com/company/wanted-solutions" target="_blank" class="nav-link"><i class="icon-social-linkedin"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                {% if page.language == 'en' %}
-                <div class="col-12 col-lg-6 p-0">                            
-                    <div class="row">
-                        <div class="col-12 col-lg-6 p-3 text-center text-lg-left item">
-                            <h4 class="title">Get in Touch</h4>
-                            <ul class="navbar-nav">
-                                <!-- <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="icon-phone mr-2"></i>
-                                        
-                                    </a>
-                                </li> -->
-                                <li class="nav-item">
-                                    <span class="nav-link">
-                                        WANTED.solutions s.r.o.
-                                    </span>
-                                </li>
-                                
-                                <li class="nav-item">
-                                    <span class="nav-link">
-                                        <i class="icon-wallet mr-2"></i>
-                                        IC 214 51 460
-                                    </span>
-                                </li>
-                                <li class="nav-item">
-                                    <span class="nav-link">
-                                        <i class="icon-envelope mr-2"></i>
-                                        DATA BOX mjq823p
-                                    </span>
-                                </li>                                
-                                <li class="nav-item">
-                                    <span class="nav-link">
-                                        <i class="icon-location-pin mr-2"></i>
-                                        Příčná 1892/4, 110 00 Prague 1
-                                    </span>
-                                </li>
-                                <li class="nav-item">
-                                    <span class="nav-link">
-                                        <i class="icon-envelope mr-2"></i>
-                                        ping@wanted.solutions
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-lg-6 p-3 text-center text-lg-left item">
-                            <!--<h4 class="title">Our Services</h4>
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Website Development</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Building Applications</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">SEO & Digital Marketing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Branding and Identity</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Digital Images & Videos</a>
-                                </li>
-                            </ul>-->
-                        </div>
+            </div>
+            <div class="col-12 col-lg-4 footer-middle">
+                <div class="col-12 item d-flex justify-content-center">
+                    <div class="col-12">
+                        <h4 class="title">Get in Touch</h4>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <span class="nav-link">
+                                    WANTED.solutions s.r.o.
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">
+                                    <i class="icon-wallet mr-2"></i>
+                                    IC 214 51 460
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">
+                                    <i class="icon-envelope mr-2"></i>
+                                    DATA BOX mjq823p
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">
+                                    <i class="icon-location-pin mr-2"></i>
+                                    Příčná 1892/4, 110 00 Prague 1
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">
+                                    <i class="icon-envelope mr-2"></i>
+                                    ping@wanted.solutions
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right col-12 col-lg-4">
+                <div class="col-12 col-lg-12 d-flex justify-content-around">
+                    <div class="fujitsu-logo">
+                        <img src="/assets/branding/fujitsu-partner.png" alt="Fujitsu Partner">
+                    </div>
+                    <div class="fujitsu-logo">
+                        <img src="/assets/branding/ai-champion-badge.png" alt="AI Champion Badge">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Copyright -->
     <section id="copyright" class="p-3 copyright">
@@ -111,88 +89,94 @@
             </div>
         </div>
     </section>
-    {% else %}
-    <div class="col-12 col-lg-6 p-0">                            
-        <div class="row">
-            <div class="col-12 col-lg-6 p-3 text-center text-lg-left item">
-                <h4 class="title">Kontakt</h4>
-                <ul class="navbar-nav">
-                    <!-- <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="icon-phone mr-2"></i>
-                            
+</footer>
+{% else %}
+<section id="cs-footer" class="footer">
+    <div class="container">
+        <div class="row items footer-widget d-flex align-items-center">
+            <div class="col-12 col-lg-4 p-0 footer-left d-flex flex-column align-items-center justify-content-center">
+                <div class="branding col-12 text-center item footer-ws-logo">
+                    <div class="brand">
+                        <a href="/" class="logo">                                
+                            <img src="/assets/website/logo-primary-bottom-margin.webp" alt="WANTED.solution logo">
                         </a>
-                    </li> -->
-                    <li class="nav-item">
-                        <span class="nav-link">
-                            WANTED.solutions s.r.o.
-                        </span>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <span class="nav-link">
-                            <i class="icon-wallet mr-2"></i>
-                            IC 214 51 460
-                        </span>
-                    </li>
-                    <li class="nav-item">
-                        <span class="nav-link">
-                            <i class="icon-envelope mr-2"></i>
-                            DATA BOX mjq823p
-                        </span>
-                    </li>                                
-                    <li class="nav-item">
-                        <span class="nav-link">
-                            <i class="icon-location-pin mr-2"></i>
-                            Příčná 1892/4, 110 00 Praha 1
-                        </span>
-                    </li>
-                    <li class="nav-item">
-                        <span class="nav-link">
-                            <i class="icon-envelope mr-2"></i>
-                            ping@wanted.solutions
-                        </span>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="socials">
+                        <ul class="navbar-nav social share-list mt-0">
+                            <li class="nav-item">
+                                <a href="https://www.github.com/wanted-solutions" target="_blank" class="nav-link"><i class="icon-social-github"></i></a>
+                            </li>
+                            <li class="nav-item linkedin">
+                                <a href="https://www.linkedin.com/company/wanted-solutions" target="_blank" class="nav-link"><i class="icon-social-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-lg-6 p-3 text-center text-lg-left item">
-                <!--<h4 class="title">Our Services</h4>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Website Development</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Building Applications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">SEO & Digital Marketing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Branding and Identity</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Digital Images & Videos</a>
-                    </li>
-                </ul>-->
+            <div class="col-12 col-lg-4 footer-middle">
+                <div class="col-12 item d-flex justify-content-center">
+                    <div class="col-12">
+                        <h4 class="title">Kontakt</h4>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <span class="nav-link">
+                                    WANTED.solutions s.r.o.
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">
+                                    <i class="icon-wallet mr-2"></i>
+                                    IC 214 51 460
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">
+                                    <i class="icon-envelope mr-2"></i>
+                                    DATA BOX mjq823p
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">
+                                    <i class="icon-location-pin mr-2"></i>
+                                    Příčná 1892/4, 110 00 Praha 1
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">
+                                    <i class="icon-envelope mr-2"></i>
+                                    ping@wanted.solutions
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 footer-right">
+                <div class="col-12 col-lg-12 d-flex justify-content-around">
+                    <div class="fujitsu-logo">
+                        <img src="/assets/branding/fujitsu-partner.png" alt="Fujitsu Partner odznak">
+                    </div>
+                    <div class="fujitsu-logo">
+                        <img src="/assets/branding/ai-champion-badge.png" alt="AI Champion odznak">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</div>
 </section>
 
 <!-- Copyright -->
-<section id="copyright" class="p-3 copyright">
-<div class="container">
-<div class="row">
-    <div class="col-12 col-md-3 p-3 text-center text-lg-left">
-        <p>Your challenges, our solutions!</p>
-    </div>
-    <div class="col-12 col-md-9 p-3 text-center text-lg-right">
-        <p class="copy-registration">© 2024 WANTED.solutions s.r.o. zapsaná v obchodním rejstříku u Městského soudu v Praze, oddíl C, vložka 402081</p>
-    </div>
-</div>
-</div>
-</section>
-{% endif %}
+    <section id="copyright" class="p-3 copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 p-3 text-center text-lg-left">
+                    <p>Your challenges, our solutions!</p>
+                </div>
+                <div class="col-12 col-md-9 p-3 text-center text-lg-right">
+                    <p class="copy-registration">© 2024 WANTED.solutions s.r.o. zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl C, vložka 402081.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+{% endif %}
