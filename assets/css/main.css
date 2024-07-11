@@ -3510,6 +3510,10 @@ footer .title {
     display: flex;
     justify-content: end;
 }
+footer .badges {
+    display: flex;
+    justify-content: space-around;
+}
 
 footer .contacts {
     position: relative;
@@ -3567,9 +3571,10 @@ footer .contacts li {
 footer .nav-item {
     margin: 0;
 }
-.socials {
-    padding-left: 15px;
+.icon-social-github {
+    margin: 0;
 }
+
 footer .nav-item .nav-link {
     display: block;
     word-break: break-all;
@@ -3983,6 +3988,9 @@ footer .copyright a:not(.btn) {
     footer.odd .nav-item .nav-link {
         margin: 0px -9px 0px 10px;
     }
+    footer .social {
+        padding-right: 15px;
+    }
 
     /* #endregion Section */
 
@@ -4017,6 +4025,10 @@ footer .copyright a:not(.btn) {
     }
 
     /* #endregion Modal */
+
+    /* #region footer */
+
+    /* #endregion footer */
 }
 
 @media(max-width: 767px) {
@@ -4317,8 +4329,17 @@ footer .copyright a:not(.btn) {
         left: 0;
         width: 100%;
     }
+    /* #region-footer */
 
-    /* #endregion Footer */
+    footer .footer-middle-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .footer-middle li {
+        padding-left: 90px;
+    }
+    /* #endregion-footer */
 }
 
 @media (max-width: 576px) {
@@ -4365,8 +4386,15 @@ footer .copyright a:not(.btn) {
     }
     
     /* #endregion Feature */
-}
 
+    /* #region Footer */
+    footer .footer-middle-items {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* #endregion Footer */
+}
 
 @media(max-width: 374px) {
 
@@ -4383,6 +4411,14 @@ footer .copyright a:not(.btn) {
     .offers .items .item .card-item{
         height: 380px;
     }
+
+    /* #region Footer */
+    footer .footer-middle-items ul li {
+        padding: 0;
+        text-align: center;
+    }
+    /* #endregion Footer */
+
 }
 
 /* #endregion All Media Queries */
