@@ -820,6 +820,9 @@ aside {
     padding-top: 25px;
     padding-bottom: 25px;
 }
+.image-backgroung {
+    opacity: 0.6;
+}
 
 /* #endregion Section */
 
