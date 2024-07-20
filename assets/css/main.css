@@ -820,6 +820,9 @@ aside {
     padding-top: 25px;
     padding-bottom: 25px;
 }
+.image-backgroung {
+    opacity: 0.6;
+}
 
 /* #endregion Section */
 
@@ -3474,6 +3477,10 @@ footer {
     background-color: var(--footer-bg-color);
 }
 
+.fujitsu-logo img {
+    height: 150px;
+}
+
 footer .brand .logo {
     font-size: 2.2rem;
     font-weight: 700;
@@ -3501,6 +3508,14 @@ footer .branding p {
 
 footer .title {
     margin-top: 0;
+}
+.linkedin {
+    display: flex;
+    justify-content: end;
+}
+footer .badges {
+    display: flex;
+    justify-content: space-around;
 }
 
 footer .contacts {
@@ -3559,6 +3574,9 @@ footer .contacts li {
 footer .nav-item {
     margin: 0;
 }
+.icon-social-github {
+    margin: 0;
+}
 
 footer .nav-item .nav-link {
     display: block;
@@ -3614,6 +3632,15 @@ footer .copyright a:not(.btn) {
     font-size: 14px;
 }
 
+footer .footer-middle-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+footer .footer-middle-items ul li {
+    width: 100%;
+}
 /* #endregion Footer */
 
 /*----------------------------------------------
@@ -3973,6 +4000,9 @@ footer .copyright a:not(.btn) {
     footer.odd .nav-item .nav-link {
         margin: 0px -9px 0px 10px;
     }
+    footer .social {
+        padding-right: 15px;
+    }
 
     /* #endregion Section */
 
@@ -4007,6 +4037,12 @@ footer .copyright a:not(.btn) {
     }
 
     /* #endregion Modal */
+
+    /* #region footer */
+    footer .footer-right {
+        margin-top: 50px !important;
+    }
+    /* #endregion footer */
 }
 
 @media(max-width: 767px) {
@@ -4307,8 +4343,20 @@ footer .copyright a:not(.btn) {
         left: 0;
         width: 100%;
     }
+    .footer .footer-middle-items ul {
+        padding-left: 100px;
+    }
 
-    /* #endregion Footer */
+    .footer .footer-middle-items ul h4 {
+        text-align: left;
+    }
+    .footer .footer-part {
+        margin-bottom: 50px;
+    }
+    .footer .footer-middle-items ul, .footer .footer-middle-items ul h4 {
+        text-align: center;
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 576px) {
@@ -4353,10 +4401,7 @@ footer .copyright a:not(.btn) {
     .offers .items .item .card-item{
         height: 300px;
     }
-    
-    /* #endregion Feature */
 }
-
 
 @media(max-width: 374px) {
 
